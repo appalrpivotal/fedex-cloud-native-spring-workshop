@@ -1,9 +1,7 @@
 # Cloud Native Workshop
-Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and Perficient for a full-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. This workshop will introduce concepts of cloud-native and Spring application development along with Pivotal Cloud Foundry.  The labs will leverage Spring Boot and Actuator, Spring Data, and other Spring projects. 
+Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and Syntel for a full-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. This workshop will introduce cloud-native and Spring application development along with Pivotal Cloud Foundry.  The labs will leverage Spring Boot and Actuator, Spring Data, and other Spring projects.
 
 **Events**
-- Visit [registration](https://pivotal.io/event/cloud-native-workshop/stl) for this workshop. 
-- Registration is open for the [Pivotal Cloud Native Roadshow](https://pivotal.io/event/pivotal-cloud-native-roadshow/stlouis) being presented on November 14th, 2016, at Washington University Knight Center. 
 - Stay informed for the [2017 SpringOne Platform](https://springoneplatform.io/) to be held in San Francisco, CA, December 4-7, 2017.
 
 ## Agenda
@@ -11,14 +9,15 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 Time | Session
 ---- | -------
 8:30 AM - 9:00 AM | _Registration and Breakfast_
-9:00 AM - 9:30 AM | _Session 1: Cloud Native Architectures & Frameworks_ (Steve)
-9:30 AM - 11:30 AM | _Session 2: Pivotal Cloud Foundry Overview with Labs*_ (Chris)
-11:30 AM - 12:00 PM | _Session 3: Spring Boot and Actuator with Labs*_ (Sharath)
-12:00 PM - 1:00 PM | _Working Lunch with Guest Speaker from Perficient_ (Dave)
-1:00 PM - 2:00 PM | _Session 4: Spring Data on Cloud Foundry with Labs*_ (Steve)
-2:00 PM - 3:00 PM | _Session 5: Spring Cloud Services on Cloud Foundry_ (Navjot)
-3:00 PM - 4:00 PM | _Session 6: Route Services with Apigee with Labs*_ (Navjot)
-4:00 PM - 4:30 PM | _Wrap-up, Q&A, Course evaluation_
+9:00 AM - 9:30 AM | _Kickoff: Workshop Logistics, Pivotal Syntel Partnership, Fedex ‘Cloud Native’ Roadmap_
+9:30 AM - 10:30 AM | _Session 1: Cloud Native Architectures & Frameworks_ (Pivotal)
+10:30 AM - 11:00 AM | _Session 2: Cloud Native Trends, How Pivotal Labs helps with Test Driven Development & Pair Programming_ (Pivotal)
+11:00 AM - 11:15 AM | _Break_
+11:15 AM - 12:00 PM | _Session 3: Pivotal Cloud Foundry Overview with Labs*_ (Pivotal)
+12:00 PM - 1:00 PM | _Lunch & Workstation setup help_
+1:00 AM - 2:00 PM | _Session 4: Spring Boot Intro, with Actuator with Labs*_ (Pivotal)
+2:00 PM - 3:00 PM | _Session 5: Spring Cloud Services on Cloud Foundry_ (Pivotal)
+3:00 PM - 3:30 PM | _Wrap-up, Q&A, Feedback_
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
 
@@ -44,13 +43,13 @@ Start by downloading and installing the appropriate prerequisite tools.
 Next, download the course materials.  This can be accomplished either through the GitHub website by downloading a repository zip and unzipping locally, or if you have Git installed, use the following commands:
 
 ```
-$ git clone https://github.com/cbusch-pivotal/stl-cloud-native-spring-workshop
-$ cd stl-cloud-native-spring-workshop/
+$ git clone https://github.com/stwomack/fedex-cloud-native-spring-workshop.git
+$ cd fedex-cloud-native-spring-workshop/
 ```
 
 **PCF Environments**
 
-Finally, in order to perform the labs, you must be connected or logged into a live PCF environment. Initially you were asked to create a Pivotal Web Services (PWS) account for use in labs and afterwards. Two other environments have also been made available for use. Please see the [Pivotal Cloud Foundry Environment document](Common/env_info.md) for details. You should have been assigned a student number and PCF instance at registration. Otherwise the instructors will provide that information for your use.
+Finally, in order to perform the labs, you must be connected or logged into a live PCF environment.
 
 ## Course Materials
 
@@ -65,7 +64,7 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 #### _Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
 
-#### _Lunch Session: Perficient_ [(Slides)](session_lunch/pivotal-prft-intellivisit-2xpg.pdf)
+#### _Lunch Session:_
 
 #### _Session 4: Spring Data on Cloud Foundry_ [(Slides)](session_04/Session_04-Spring_Data-2xpg.pdf)
   - [Lab 6 - Build a Hypermedia-Driven RESTful Web Service with Spring Data REST](session_04/lab_06/lab_06.adoc)
@@ -78,16 +77,9 @@ _Extra credit - labs can be done on your own!_
   - [Lab 10 - Config Server](session_05/lab_10/lab_10.adoc)
   - [Lab 11 - Circuit Breaker Dashboard](session_05/lab_11/lab_11.adoc)
 
-#### _Session 6: Route Services with Apigee_ [(Slides)](session_06/Session_06-Route_Services_and_Apigee_Edge-2xpg.pdf)
-  - [Lab 12 - PCF Route Service with Apigee](session_06/lab_12/lab_12.adoc)
-  - [Lab 13 - Apigee DevJam](session_06/lab_13/lab_13.adoc)
+#### _Wrap-up, Q&A_
 
-#### _Wrap-up, Q&A, Course evaluation_ [(Slides)](session_wrapup/Session_Wrap-up-2xpg.pdf) [(Evaluation)](https://goo.gl/forms/aD5y2Rlhn99CZUaA2)
-
-## Instructors
-- Chris Busch, Pivotal Platform Architect, cbusch@pivotal.io
-- Navjot Sagoo, Pivotal Platform Architect, nsagoo@pivotal.io
-- Sharath Sahadevan, Pivotal Platform Achitect, ssahadevan@pivotal.io
-- Dave Stockmann, Perficient Principle Architect, dave.stockmann@perficient.com
+## Speakers & Instructors
+- Dan Kennedy, Pivotal Platform Architect, dkennedy@pivotal.io
+- Ravi Appalla, Pivotal Platform Architect, rappalla@pivotal.io
 - Steve Womack, Pivotal Platform Architect, swomack@pivotal.io
-
