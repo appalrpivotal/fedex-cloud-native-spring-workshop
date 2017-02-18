@@ -9,14 +9,14 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 Time | Session
 ---- | -------
 8:30 AM - 9:00 AM | _Registration and Breakfast_
-9:00 AM - 9:30 AM | _Kickoff: Workshop Logistics, Pivotal Syntel Partnership, Fedex ‘Cloud Native’ Roadmap_
-9:30 AM - 10:30 AM | _Session 1: Cloud Native Architectures & Frameworks_ (Pivotal)
-10:30 AM - 11:00 AM | _Session 2: Cloud Native Trends, How Pivotal Labs helps with Test Driven Development & Pair Programming_ (Pivotal)
+9:00 AM - 9:30 AM | _Kickoff: Workshop Logistics, Pivotal Syntel Partnership, Fedex ‘Cloud Native’ Roadmap_ (Pivotal & Syntel)
+9:30 AM - 10:00 AM | _Kickoff, continued: Cloud Native Trends, How Pivotal Labs helps with Test Driven Development & Pair Programming_ (Pivotal)
+10:00AM - 10:30 AM | _Session 1: Cloud Native Architectures & Frameworks_ (Pivotal)
 11:00 AM - 11:15 AM | _Break_
-11:15 AM - 12:00 PM | _Session 3: Pivotal Cloud Foundry Overview with Labs*_ (Pivotal)
-12:00 PM - 1:00 PM | _Lunch & Workstation setup help_
-1:00 AM - 2:00 PM | _Session 4: Spring Boot Intro, with Actuator with Labs*_ (Pivotal)
-2:00 PM - 3:00 PM | _Session 5: Spring Cloud Services on Cloud Foundry_ (Pivotal)
+11:15 AM - 12:00 PM | _Session 2: Pushing your first application + Pivotal Cloud Foundry Overview *_ (Pivotal)
+12:00 PM - 1:00 PM | _Lunch_
+1:00 AM - 2:00 PM | _Session 3: Spring Boot Intro, with Actuator with Labs*_ (Pivotal)
+2:00 PM - 3:00 PM | _Session 4: Spring Cloud Services on Cloud Foundry_ (Pivotal)
 3:00 PM - 3:30 PM | _Wrap-up, Q&A, Feedback_
 
 _*See [Course Materials](#course-materials) section below for slides and labs_

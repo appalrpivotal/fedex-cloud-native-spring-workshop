@@ -1,9 +1,0 @@
-:compat-mode:
-= Lab 13 Apigee Labs
-
-== Creating and Managing API's with Apigee Edge - Labs
-
-- https://github.com/apigee/DevJam[Apigee DevJam]
-- https://github.com/chrislatimer/adaptordie[Apigee Adapt or Die]
-
-link:/README.md#course-materials[Course Materials home]
