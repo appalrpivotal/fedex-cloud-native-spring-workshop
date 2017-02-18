@@ -4,12 +4,12 @@
 [abstract]
 --
 The _Spring Music_ application was designed to illustrate the ease with which various types of data services can be bound to and utilized by Spring applications running on Cloud Foundry.
-In this lab, we'll be binding the application to a ClearDB MySQL database.
+In this lab, we'll be binding the application to a MySQL database.
 
 Cloud Foundry services are managed through two primary types of operations:
 
 Create/Delete:: These operations create or delete instances of a service.
-For a database this could mean creating/deleting a schema in an existing multitenant cluster or creating/deleting a dedicated database cluster.
+For a database this could mean creating/deleting a schema in an existing multi-tenant cluster or creating/deleting a dedicated database cluster.
 Bind/Unbind:: These operations create or delete unique credential sets for an existing service instance that can then be injected into the environment of an application instance.
 --
 
@@ -35,9 +35,10 @@ $ cf marketplace
 and you'll get a list of services, their available plans, and descriptions.
 
 The second way is specific to Pivotal Cloud Foundry's Application Manager UI.
-If you haven't already, login to it by visiting https://run.pivotal.io
+If you haven't already, login to it by visiting the url the platform team has provided
 
 Click on the ``Marketplace'' link:
+The following screenshots are from Pivotal Web Services (Publicly hosted Pivotal Cloud Foundry)
 
 image::/../../Common/images/PWS_AM_InstructorSpace.png[]
 
@@ -47,27 +48,20 @@ image::/../../Common/images/PWS_Marketplace.png[]
 
 == Creating and Binding to a Service Instance
 
-. Let's begin by creating a MySQL instance using the ClearDB MySQL Database service broker.
+. Let's begin by creating a MySQL instance using the MySQL Database service broker.
 From the CLI, let's _create_ a developer instance:
 +
 ----
-$ cf create-service cleardb spark spring-music-db
-Creating service spring-music-db in org oreilly-class / space instructor as cbusch@pivotal.io...
-OK
-----
-+
-Or, if you are using FNTS or PEZ (link:/Common/env_info.md[see Environments]):
-+
-----
 $ cf create-service p-mysql 100mb-dev spring-music-db
-...
+Creating service spring-music-db in org Workshop / space user1 as swomack@pivotal.io...
+OK
 ----
 
 . Next we'll _bind_ the newly created instance to our `spring-music` application:
 +
 ----
 $ cf bind-service spring-music spring-music-db
-Binding service spring-music-db to app spring-music in org oreilly-class / space instructor as cbusch@pivotal.io...
+Binding service spring-music-db to app spring-music in org oreilly-class / space instructor as swomack@pivotal.io...
 OK
 TIP: Use 'cf restage' to ensure your env variable changes take effect
 ----
@@ -86,7 +80,7 @@ The subset of the output we're interested in is located near the very top, title
 System-Provided:
 {
  "VCAP_SERVICES": {
-  "cleardb": [
+  "p-mysql": [
    {
     "credentials": {
      "hostname": "us-cdbr-iron-east-03.cleardb.net",
@@ -99,7 +93,7 @@ System-Provided:
     },
     "label": "cleardb",
     "name": "spring-music-db",
-    "plan": "spark",
+    "plan": "100mb-dev",
     "tags": [
      "Cloud Databases",
      "Data Stores",
@@ -118,7 +112,7 @@ System-Provided:
 }
 ----
 <1> `VCAP_SERVICES` is a special Cloud Foundry environment variable that contains a JSON document containing all of the information for any services bound to an application.
-<2> Notice here the unique URI for this instance of `cleardb` MySQL that `spring-music` has been bound to.
+<2> Notice here the unique URI for this instance of `p-mysql` MySQL that `spring-music` has been bound to.
 ====
 
 . Now let's _restage_ the application, which cycles our application back through the staging/buildpack process before redeploying the application.footnote:[In this case, we could accomplish the same goal by only _restarting_ the application via `cf restart spring-music`.
@@ -144,7 +138,7 @@ Since we're done using the spring-music application, let's clean up our applicat
 $ cf delete spring-music
 
 Really delete the app spring-music?> y
-Deleting app spring-music in org oreilly-class / space instructor as cbusch@pivotal.io...
+Deleting app spring-music in org Workshop / space user1 as swomack@pivotal.io...
 OK
 ----
 . Delete the `spring-music-db` service:
@@ -153,7 +147,7 @@ OK
 $ cf delete-service spring-music-db
 
 Really delete the service spring-music-db?> y
-Deleting service spring-music-db in org oreilly-class / space instructor as cbusch@pivotal.io...
+Deleting service spring-music-db in org Workshop / space user1 as swomack@pivotal.io...
 OK
 ----
 
