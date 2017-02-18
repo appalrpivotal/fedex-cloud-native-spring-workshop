@@ -1,5 +1,5 @@
 # Cloud Native Workshop
-Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and Syntel for a full-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. This workshop will introduce cloud-native and Spring application development along with Pivotal Cloud Foundry.  The labs will leverage Spring Boot and Actuator, Spring Data, and other Spring projects.
+Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and Syntel for a full-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. This workshop will introduce cloud-native and Spring application development along with Pivotal Cloud Foundry.  The labs will leverage Spring Boot and Actuator, along with Spring Cloud (Netflix OSS)
 
 **Events**
 - Stay informed for the [2017 SpringOne Platform](https://springoneplatform.io/) to be held in San Francisco, CA, December 4-7, 2017.
@@ -13,10 +13,10 @@ Time | Session
 9:30 AM - 10:00 AM | _Kickoff, continued: Cloud Native Trends, How Pivotal Labs helps with Test Driven Development & Pair Programming_ (Pivotal)
 10:00AM - 10:30 AM | _Session 1: Cloud Native Architectures & Frameworks_ (Pivotal)
 11:00 AM - 11:15 AM | _Break_
-11:15 AM - 12:00 PM | _Session 2: Pushing your first application + Pivotal Cloud Foundry Overview *_ (Pivotal)
-12:00 PM - 1:00 PM | _Lunch_
-1:00 AM - 2:00 PM | _Session 3: Spring Boot Intro, with Actuator with Labs*_ (Pivotal)
-2:00 PM - 3:00 PM | _Session 4: Spring Cloud Services on Cloud Foundry_ (Pivotal)
+11:15 AM - 12:00 PM | _Session 2: Pushing your first application, with Labs*_ (Pivotal)
+12:00 PM - 1:00 PM | _Lunch: Pivotal Cloud Foundry Overview_
+1:00 AM - 2:00 PM | _Session 3: Spring Boot Intro + Actuator, with Labs*_ (Pivotal)
+2:00 PM - 3:00 PM | _Session 4: Spring Cloud Services on Cloud Foundry, with Labs*_ (Pivotal)
 3:00 PM - 3:30 PM | _Wrap-up, Q&A, Feedback_
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
@@ -55,20 +55,16 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 #### _Session 1: Cloud Native Architectures & Frameworks_ [(Slides)](session_01/Session_01-Cloud_Native_Architectures_and_Frameworks-2xpg.pdf)
 
-#### _Session 2: Pivotal Cloud Foundry Overview_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
+#### _Session 2: Pivotal Cloud Foundry Overview_ 
   - [Lab 1 - From Zero to Pushing Your First Application](session_02/lab_01/lab_01.adoc)
   - [Lab 2 - Binding to Cloud Foundry Services](session_02/lab_02/lab_02.adoc)
   - [Lab 3 - Scaling Applications](session_02/lab_03/lab_03.adoc)
   - [Lab 4 - Monitoring Applications](session_02/lab_04/lab_04.adoc)
 
+#### _Lunch Session:_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
+
 #### _Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
-
-#### _Lunch Session:_
-
-#### _Session 4: Spring Data on Cloud Foundry_ [(Slides)](session_04/Session_04-Spring_Data-2xpg.pdf)
-  - [Lab 6 - Build a Hypermedia-Driven RESTful Web Service with Spring Data REST](session_04/lab_06/lab_06.adoc)
-  - [Lab 7 - Leveraging Spring Cloud Connectors for Service Binding](session_04/lab_07/lab_07.adoc)
 
 #### _Session 5: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
