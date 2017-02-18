@@ -68,10 +68,10 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 #### _Session 5: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
-  - [Lab 8 - Binding Spring Cloud Services](session_05/lab_08/lab_08.adoc)
-  - [Lab 9 - Service Registry](session_05/lab_09/lab_09.adoc)
-  - [Lab 10 - Config Server](session_05/lab_10/lab_10.adoc)
-  - [Lab 11 - Circuit Breaker Dashboard](session_05/lab_11/lab_11.adoc)
+  - [Lab 6 - Binding Spring Cloud Services](session_05/lab_08/lab_08.adoc)
+  - [Lab 7 - Service Registry](session_05/lab_09/lab_09.adoc)
+  - [Lab 8 - Config Server](session_05/lab_10/lab_10.adoc)
+  - [Lab 9 - Circuit Breaker Dashboard](session_05/lab_11/lab_11.adoc)
 
 #### _Wrap-up, Q&A_
 
