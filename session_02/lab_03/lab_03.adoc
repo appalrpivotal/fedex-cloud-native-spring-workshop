@@ -36,7 +36,7 @@ It also keeps track of and reports how many web requests that this instance has 
 +
 ----
 $ cf scale -i 5 cf-scale-boot
-Scaling app cf-scale-boot in org oreilly-class / space instructor as cbusch@pivotal.io...
+Scaling app cf-scale-boot in org Workshop / space user1 as swomack@pivotal.io...
 OK
 ----
 +
@@ -47,7 +47,7 @@ In reporting `OK`, the CLI is letting you know that the additional requested ins
 ====
 ----
 $ cf app cf-scale-boot
-Showing health and status for app cf-scale-boot in org oreilly-class / space instructor as cbusch@pivotal.io...
+Showing health and status for app cf-scale-boot in org Workshop / space user1 as swomack@pivotal.io...
 OK
 
 requested state: started
@@ -71,7 +71,7 @@ last uploaded: Fri Feb 13 18:56:29 UTC 2015
 +
 ----
 $ cf app cf-scale-boot
-Showing health and status for app cf-scale-boot in org oreilly-class / space instructor as cbusch@pivotal.io...
+Showing health and status for app cf-scale-boot in org Workshop / space user1 as swomack@pivotal.io...
 OK
 
 requested state: started
@@ -105,7 +105,7 @@ This makes for very dynamic and rapid reconfiguration!
 +
 ----
 $ cf scale -i 1 cf-scale-boot
-Scaling app cf-scale-boot in org oreilly-class / space instructor as cbusch@pivotal.io...
+Scaling app cf-scale-boot in org Workshop / space user1 as swomack@pivotal.io...
 OK
 ----
 
@@ -113,7 +113,7 @@ OK
 +
 ----
 $ cf app cf-scale-boot
-Showing health and status for app cf-scale-boot in org oreilly-class / space instructor as cbusch@pivotal.io...
+Showing health and status for app cf-scale-boot in org Workshop / space user1 as swomack@pivotal.io...
 OK
 
 requested state: started
