@@ -5,7 +5,7 @@
 . If you haven't already, download the latest release of the link:https://github.com/cloudfoundry/cli#installers-and-compressed-binaries[Cloud Foundry CLI] for your operating system and install it.
 
 . Multiple Pivotal Cloud Foundry instances are available for use during this workshop, provided by the instructor. Use the API target and username/password provided by the instructor..
-. Workshop examples will use http://run.pivotal.io[Pivotal Web Services] as the target cloud foundry instance, i.e. api.run.pivotal.io. Create a trial http://run.pivotal.io[Pivotal Web Services] account to use Pivotal's web-hosted Cloud Foundry for labs.
+. Workshop examples will use http://run.pivotal.io[Pivotal Web Services] as the target cloud foundry instance, i.e. api.run.pivotal.io. If interested, create a trial http://run.pivotal.io[Pivotal Web Services] account to use Pivotal's web-hosted Cloud Foundry for labs.
 
 . From a command prompt, set the API target for the CLI:
 +
@@ -108,12 +108,12 @@ In this case, the CLI has created an application record for _Spring Music_ in yo
 Here the CLI is creating a route with random word tokens inserted (again, see `manifest.yml` for a hint!) to prevent route collisions across the default `cfapps.io` domain.
 <4> Now the CLI is _binding_ the created route to the application.
 Routes can actually be bound to multiple applications to support techniques such as http://www.mattstine.com/2013/07/10/blue-green-deployments-on-cloudfoundry[blue-green deployments].
-<5> The CLI finally uploads the application bits to PWS. Notice that it's uploading _90 files_! This is because Cloud Foundry actually explodes a ZIP artifact before uploading it for caching purposes.
+<5> The CLI finally uploads the application bits to Cloud Foundry. Notice that it's uploading _90 files_! This is because Cloud Foundry actually explodes a ZIP artifact before uploading it for caching purposes.
 <6> Now we begin the staging process. The https://github.com/cloudfoundry/java-buildpack[Java Buildpack] is responsible for assembling the runtime components necessary to run the application.
 <7> Here we see the version of the JRE that has been chosen and installed.
 <8> And here we see the version of Tomcat that has been chosen and installed.
 <9> The complete package of your application and all of its necessary runtime components is called a _droplet_.
-Here the droplet is being uploaded to PWS's internal blobstore so that it can be easily copied to one or more _http://docs.cloudfoundry.org/concepts/architecture/execution-agent.html[Droplet Execution Agents (DEA's)]_ for execution.
+Here the droplet is being uploaded to Cloud Foundry's internal blobstore so that it can be easily copied to one or more _http://docs.cloudfoundry.org/concepts/architecture/execution-agent.html[Droplet Execution Agents (DEA's)]_ for execution.
 <10> The CLI tells you exactly what command and argument set was used to start your application.
 <11> Finally the CLI reports the current status of your application's health.
 You can get the same output at any time by typing `cf app spring-music`.
