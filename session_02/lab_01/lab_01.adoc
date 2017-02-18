@@ -50,7 +50,7 @@ You should see output similar to the following listing. Take a look at the listi
 ----
 Using manifest file /Users/pivotal/stwomack/fedex-cloud-native-spring-workshop/session_02/lab_01/spring-music/manifest.yml <1>
 
-Creating app spring-music in org oreilly-class / space instructor as swomack@pivotal.io...
+Creating app spring-music in org workshop / space instructor as swomack@pivotal.io...
 OK <2>
 
 Creating route spring-music-hippest-shaman.cfapps.io...
@@ -65,7 +65,7 @@ Uploading 569.7K, 90 files
 Done uploading
 OK
 
-Starting app spring-music in org oreilly-class / space instructor as swomack@pivotal.io... <6>
+Starting app spring-music in org workshop / space instructor as swomack@pivotal.io... <6>
 -----> Downloaded app package (21M)
 -----> Java Buildpack Version: v2.6.1 |  https://github.com/cloudfoundry/java-buildpack.git#2d92e70
 -----> Downloading Open Jdk JRE 1.8.0_31 from https://download.run.pivotal.io/openjdk/lucid/x86_64/openjdk-1.8.0_31.tar.gz (1.3s)
@@ -88,7 +88,7 @@ OK
 
 App spring-music was started using this command `JAVA_HOME=$PWD/.java-buildpack/open_jdk_jre JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh -Xmx382293K -Xms382293K -XX:MaxMetaspaceSize=64M -XX:MetaspaceSize=64M -Xss995K -Daccess.logging.enabled=false -Dhttp.port=$PORT" $PWD/.java-buildpack/tomcat/bin/catalina.sh run` <10>
 
-Showing health and status for app spring-music in org oreilly-class / space instructor as swomack@pivotal.io... <11>
+Showing health and status for app spring-music in org workshop / space instructor as swomack@pivotal.io... <11>
 OK
 
 requested state: started
