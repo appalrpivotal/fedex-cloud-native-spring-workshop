@@ -48,35 +48,74 @@ You should see output similar to the following listing. Take a look at the listi
 +
 ====
 ----
-Using manifest file /Users/pivotal/stwomack/fedex-cloud-native-spring-workshop/session_02/lab_01/spring-music/manifest.yml <1>
+  spring-music git:(master) cf push
+Using manifest file /Users/swomack/workspace-workshops/fedex-cloud-native-spring-workshop/session_02/lab_01/spring-music/manifest.yml
 
-Creating app spring-music in org workshop / space instructor as swomack@pivotal.io...
-OK <2>
+Updating app spring-music in org Express-Scripts / space Workshop as swomack@pivotal.io...
+OK
 
-Creating route spring-music-hippest-shaman.cfapps.io...
-OK <3>
+Creating route spring-music-undredged-nonproductiveness.cfapps.io...
+OK
 
-Binding spring-music-hippest-shaman.cfapps.io to spring-music...
-OK <4>
+Binding spring-music-undredged-nonproductiveness.cfapps.io to spring-music...
+OK
 
-Uploading spring-music... <5>
-Uploading app files from: /Users/pivotal/stwomack/fedex-cloud-native-spring-workshop/session_02/lab_01/spring-music/build/libs/spring-music.war
-Uploading 569.7K, 90 files
+Uploading spring-music...
+Uploading app files from: /var/folders/gx/chs6597d31n1v5ns2r6954040000gn/T/unzipped-app314850399
+Uploading 446.8K, 90 files
 Done uploading
 OK
 
-Starting app spring-music in org workshop / space instructor as swomack@pivotal.io... <6>
------> Downloaded app package (21M)
------> Java Buildpack Version: v2.6.1 |  https://github.com/cloudfoundry/java-buildpack.git#2d92e70
------> Downloading Open Jdk JRE 1.8.0_31 from https://download.run.pivotal.io/openjdk/lucid/x86_64/openjdk-1.8.0_31.tar.gz (1.3s)
-       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.2s) <7>
------> Downloading Spring Auto Reconfiguration 1.7.0_RELEASE from https://download.run.pivotal.io/auto-reconfiguration/auto-reconfiguration-1.7.0_RELEASE.jar (0.1s)
------> Downloading Tomcat Instance 8.0.18 from https://download.run.pivotal.io/tomcat/tomcat-8.0.18.tar.gz (0.4s)
-       Expanding Tomcat to .java-buildpack/tomcat (0.1s) <8>
------> Downloading Tomcat Lifecycle Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-lifecycle-support/tomcat-lifecycle-support-2.4.0_RELEASE.jar (0.0s)
------> Downloading Tomcat Logging Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-logging-support/tomcat-logging-support-2.4.0_RELEASE.jar (0.0s)
------> Downloading Tomcat Access Logging Support 2.4.0_RELEASE from https://download.run.pivotal.io/tomcat-access-logging-support/tomcat-access-logging-support-2.4.0_RELEASE.jar (0.0s)
------> Uploading droplet (66M) <9>
+Stopping app spring-music in org Express-Scripts / space Workshop as swomack@pivotal.io...
+OK
+
+Starting app spring-music in org Express-Scripts / space Workshop as swomack@pivotal.io...
+Downloading binary_buildpack...
+Downloading nodejs_buildpack...
+Downloading dotnet_core_buildpack...
+Downloading ruby_buildpack...
+Downloading dotnet_core_buildpack_beta...
+Downloaded binary_buildpack
+Downloading go_buildpack...
+Downloaded dotnet_core_buildpack_beta
+Downloaded dotnet_core_buildpack
+Downloading staticfile_buildpack...
+Downloaded ruby_buildpack
+Downloading java_buildpack...
+Downloading python_buildpack...
+Downloaded nodejs_buildpack
+Downloading php_buildpack...
+Downloaded java_buildpack
+Downloaded staticfile_buildpack
+Downloaded php_buildpack
+Downloaded go_buildpack
+Downloaded python_buildpack
+Creating container
+Successfully created container
+Downloading app package...
+Downloaded app package (20.1M)
+-----> Java Buildpack Version: v3.13 (offline) | https://github.com/cloudfoundry/java-buildpack.git#03b493f
+-----> Downloading Open Jdk JRE 1.8.0_121 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_121.tar.gz (found in cache)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.1s)
+-----> Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (found in cache)
+       Memory Settings: -Xss349K -Xmx681574K -XX:MaxMetaspaceSize=104857K -Xms681574K -XX:MetaspaceSize=104857K
+-----> Downloading Container Certificate Trust Store 2.0.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-certificate-trust-store/container-certificate-trust-store-2.0.0_RELEASE.jar (found in cache)
+       Adding certificates to .java-buildpack/container_certificate_trust_store/truststore.jks (0.4s)
+-----> Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+-----> Downloading Tomcat Instance 8.0.41 from https://java-buildpack.cloudfoundry.org/tomcat/tomcat-8.0.41.tar.gz (found in cache)
+       Expanding Tomcat Instance to .java-buildpack/tomcat (0.1s)
+-----> Downloading Tomcat Lifecycle Support 2.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/tomcat-lifecycle-support/tomcat-lifecycle-support-2.5.0_RELEASE.jar (found in cache)
+-----> Downloading Tomcat Logging Support 2.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/tomcat-logging-support/tomcat-logging-support-2.5.0_RELEASE.jar (found in cache)
+-----> Downloading Tomcat Access Logging Support 2.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/tomcat-access-logging-support/tomcat-access-logging-support-2.5.0_RELEASE.jar (found in cache)
+Exit status 0
+Uploading droplet, build artifacts cache...
+Uploading build artifacts cache...
+Uploading droplet...
+Uploaded build artifacts cache (109B)
+Uploaded droplet (73M)
+Uploading complete
+Destroying container
+Successfully destroyed container
 
 0 of 1 instances running, 1 starting
 1 of 1 instances running
@@ -86,19 +125,21 @@ App started
 
 OK
 
-App spring-music was started using this command `JAVA_HOME=$PWD/.java-buildpack/open_jdk_jre JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh -Xmx382293K -Xms382293K -XX:MaxMetaspaceSize=64M -XX:MetaspaceSize=64M -Xss995K -Daccess.logging.enabled=false -Dhttp.port=$PORT" $PWD/.java-buildpack/tomcat/bin/catalina.sh run` <10>
+App spring-music was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) &&  JAVA_HOME=$PWD/.java-buildpack/open_jdk_jre JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djavax.net.ssl.trustStore=$PWD/.java-buildpack/container_certificate_trust_store/truststore.jks -Djavax.net.ssl.trustStorePassword=java-buildpack-trust-store-password -Djava.endorsed.dirs=$PWD/.java-buildpack/tomcat/endorsed -Daccess.logging.enabled=false -Dhttp.port=$PORT" exec $PWD/.java-buildpack/tomcat/bin/catalina.sh run`
 
-Showing health and status for app spring-music in org workshop / space instructor as swomack@pivotal.io... <11>
+Showing health and status for app spring-music in org Express-Scripts / space Workshop as swomack@pivotal.io...
 OK
 
 requested state: started
 instances: 1/1
 usage: 512M x 1 instances
-urls: spring-music-hippest-shaman.cfapps.io
-last uploaded: Fri Feb 13 15:43:08 UTC 2015
+urls: spring-music-esi1.cfapps.io, spring-music-unrecalled-stinkweed.cfapps.io, spring-music-undredged-nonproductiveness.cfapps.io
+last uploaded: Sat Feb 18 19:34:01 UTC 2017
+stack: cflinuxfs2
+buildpack: container-certificate-trust-store=2.0.0_RELEASE java-buildpack=v3.13-offline-https://github.com/cloudfoundry/java-buildpack.git#03b493f open-jdk-like-jre=1.8.0_121 open-jdk-like-memory-calculator=2.0.2_RELEASE spring-auto-reconfiguration=1.10.0_RELEASE...
 
-     state     since                    cpu    memory           disk
-#0   running   2015-02-13 09:43:55 AM   0.0%   394.5M of 512M   131.1M of 1G
+     state     since                    cpu    memory           disk           details
+#0   running   2017-02-18 01:34:56 PM   0.0%   222.1M of 512M   154.2M of 1G
 ----
 <1> The CLI is using a manifest to provide necessary configuration details such as application name, memory to be allocated, and path to the application artifact.
 Take a look at `manifest.yml` to see how.
