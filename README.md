@@ -14,9 +14,9 @@ Time | Session
 10:00AM - 10:30 AM | _Session 1: Cloud Native Architectures & Frameworks_ (Pivotal)
 11:00 AM - 11:15 AM | _Break_
 11:15 AM - 12:00 PM | _Session 2: Pushing your first application, with Labs*_ (Pivotal)
-12:00 PM - 1:00 PM | _Lunch: Pivotal Cloud Foundry Overview_
+12:00 PM - 1:00 PM | _Lunch_
 1:00 AM - 2:00 PM | _Session 3: Spring Boot Intro + Actuator, with Labs*_ (Pivotal)
-2:00 PM - 3:00 PM | _Session 4: Spring Cloud Services on Cloud Foundry, with Labs*_ (Pivotal)
+2:00 PM - 3:00 PM | _So what's happening behind the scenes? Pivotal Cloud Foundry Overview_ (Pivotal)
 3:00 PM - 3:30 PM | _Wrap-up, Q&A, Feedback_
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
@@ -68,7 +68,7 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 ### _So what's happening behind the scenes? Pivotal Cloud Foundry Overview_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
 
-### _Session 4: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
+### _BONUS Session 4: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
   - [Lab 6 - Binding Spring Cloud Services](session_05/lab_08/lab_08.adoc)
   - [Lab 7 - Service Registry](session_05/lab_09/lab_09.adoc)
