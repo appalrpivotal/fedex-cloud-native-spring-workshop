@@ -12,9 +12,9 @@ Time | Session
 9:00 AM - 9:30 AM | _Kickoff: Workshop Logistics, Pivotal Syntel Partnership, Fedex ‘Cloud Native’ Roadmap_ (Pivotal & Syntel)
 9:30 AM - 10:00 AM | _Kickoff, continued: Cloud Native Trends, How Pivotal Labs helps with Test Driven Development & Pair Programming_ (Pivotal)
 10:00AM - 10:30 AM | _Session 1: Cloud Native Architectures & Frameworks_
-11:00 AM - 11:15 AM | _Break_
-11:15 AM - 12:00 PM | _Session 2: Pushing your first application, with Labs*_
-12:00 PM - 1:00 PM | _Lunch_
+11:00 AM- 11:15 AM | _Break_
+11:15 AM- 12:00 PM | _Session 2: Pushing your first application, with Labs*_
+12:00 PM- 1:00 PM | _Lunch_
 1:00 AM - 2:00 PM | _Session 2, continued: So what's happening behind the scenes? Pivotal Cloud Foundry Overview_
 2:00 PM - 3:00 PM | _Session 3: Spring Boot Intro + Actuator, with Labs*_
 3:00 PM - 3:30 PM | _Wrap-up, Q&A, Feedback_
@@ -70,12 +70,12 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 ### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up-2xpg.pdf)
 
-### _BONUS - Session 4: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
+### _BONUS - Session 4: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_04/Session_04-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
-  - [Lab 6 - Binding Spring Cloud Services](session_05/lab_08/lab_08.adoc)
-  - [Lab 7 - Service Registry](session_05/lab_09/lab_09.adoc)
-  - [Lab 8 - Config Server](session_05/lab_10/lab_10.adoc)
-  - [Lab 9 - Circuit Breaker Dashboard](session_05/lab_11/lab_11.adoc)
+  - [Lab 6 - Binding Spring Cloud Services](session_04/lab_06/lab_06.adoc)
+  - [Lab 7 - Service Registry](session_04/lab_07/lab_07.adoc)
+  - [Lab 8 - Config Server](session_04/lab_08/lab_08.adoc)
+  - [Lab 9 - Circuit Breaker Dashboard](session_04/lab_09/lab_09.adoc)
 
 ## Speakers & Instructors
 - Dan Kennedy, Pivotal Platform Architect, dkennedy@pivotal.io
