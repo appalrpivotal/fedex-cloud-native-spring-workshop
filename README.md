@@ -55,18 +55,20 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 #### _Session 1: Cloud Native Architectures & Frameworks_ [(Slides)](session_01/Session_01-Cloud_Native_Architectures_and_Frameworks-2xpg.pdf)
 
-#### _Session 2: Pivotal Cloud Foundry Overview_ 
+#### _Session 2: Pivotal Cloud Foundry Fundamentals_ 
   - [Lab 1 - From Zero to Pushing Your First Application](session_02/lab_01/lab_01.adoc)
   - [Lab 2 - Binding to Cloud Foundry Services](session_02/lab_02/lab_02.adoc)
   - [Lab 3 - Scaling Applications](session_02/lab_03/lab_03.adoc)
   - [Lab 4 - Monitoring Applications](session_02/lab_04/lab_04.adoc)
 
-#### _Lunch Session:_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
+#### _Lunch Session:_ 
 
 #### _Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
 
-#### _Session 5: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
+### _Session 4: So what's happening behind the scenes? Pivotal Cloud Foundry Overview_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
+
+#### _Bonus Lab: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
   - [Lab 6 - Binding Spring Cloud Services](session_05/lab_08/lab_08.adoc)
   - [Lab 7 - Service Registry](session_05/lab_09/lab_09.adoc)
