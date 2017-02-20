@@ -1,5 +1,5 @@
 :compat-mode:
-= Lab 8 - Binding to Spring Cloud Services
+= Lab 6 - Binding to Spring Cloud Services
 
 [abstract]
 --

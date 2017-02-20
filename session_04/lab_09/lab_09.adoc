@@ -1,5 +1,5 @@
 :compat-mode:
-= Lab 11 - The Circuit Breaker Dashboard
+= Lab 9 - The Circuit Breaker Dashboard
 
 == Use the Circuit Breaker Dashboard
 
