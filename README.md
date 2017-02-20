@@ -61,7 +61,7 @@ Finally, in order to perform the labs, you must be connected or logged into a li
   - [Lab 3 - Scaling Applications](session_02/lab_03/lab_03.adoc)
   - [Lab 4 - Monitoring Applications](session_02/lab_04/lab_04.adoc)
 
-#### _Lunch Session:_ 
+### _Lunch:_ 
 
 ### _Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
