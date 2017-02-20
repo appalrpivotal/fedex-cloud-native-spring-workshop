@@ -15,8 +15,8 @@ Time | Session
 11:00 AM - 11:15 AM | _Break_
 11:15 AM - 12:00 PM | _Session 2: Pushing your first application, with Labs*_
 12:00 PM - 1:00 PM | _Lunch_
-1:00 AM - 2:00 PM | _Session 3: Spring Boot Intro + Actuator, with Labs*_
-2:00 PM - 3:00 PM | _So what's happening behind the scenes? Pivotal Cloud Foundry Overview_
+1:00 AM - 2:00 PM | _Session 2, continued: So what's happening behind the scenes? Pivotal Cloud Foundry Overview_
+2:00 PM - 3:00 PM | _Session 3: Spring Boot Intro + Actuator, with Labs*_
 3:00 PM - 3:30 PM | _Wrap-up, Q&A, Feedback_
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
@@ -63,10 +63,10 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 ### _Lunch:_ 
 
+### _Session 2, continued. So what's happening behind the scenes? Pivotal Cloud Foundry Overview_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
+
 ### _Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
-
-### _So what's happening behind the scenes? Pivotal Cloud Foundry Overview_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
 
 ### _BONUS Session 4: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
