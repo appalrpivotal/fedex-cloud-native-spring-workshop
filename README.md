@@ -68,14 +68,14 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 ### _Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
 
-### _BONUS Session 4: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
+### _Wrap-up, Q&A_
+
+### _BONUS - Session 4: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_05/Session_05-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
   - [Lab 6 - Binding Spring Cloud Services](session_05/lab_08/lab_08.adoc)
   - [Lab 7 - Service Registry](session_05/lab_09/lab_09.adoc)
   - [Lab 8 - Config Server](session_05/lab_10/lab_10.adoc)
   - [Lab 9 - Circuit Breaker Dashboard](session_05/lab_11/lab_11.adoc)
-
-### _Wrap-up, Q&A_
 
 ## Speakers & Instructors
 - Dan Kennedy, Pivotal Platform Architect, dkennedy@pivotal.io
