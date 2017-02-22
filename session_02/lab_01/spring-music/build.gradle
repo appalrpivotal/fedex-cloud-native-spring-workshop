@@ -126,7 +126,7 @@ tomcatRun {
 }
 
 cloudfoundry {
-    target = "https://api.run.pivotal.io"
+    target = "https://api.sys.cf.pa.fedex.com"
     space = "development"
 
     file = file("${war.archivePath}")

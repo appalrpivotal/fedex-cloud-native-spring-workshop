@@ -9,10 +9,9 @@
 Use the following information to connect (login) to specific environments as directed by the instructor.
 
 ### Pivotal Web Services (PWS)
-- Website: http://run.pivotal.io
-- Endpoint: api.run.pivotal.io
-- Username: Typically your email used when creating your PWS account
-- Password: From your account
+- Website: http://apps.sys.cf.pa.fedex.com
+- Endpoint: api.sys.cf.pa.fedex.com
+- Username/Password: ‘Employee ID’ and password (LDAP)
 - Use [PWS Marketplace services](#pws-marketplace-services-and-plans) below
 
 ## Logging into an Environment

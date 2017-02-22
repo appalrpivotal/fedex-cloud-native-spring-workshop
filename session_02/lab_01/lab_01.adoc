@@ -4,19 +4,18 @@
 
 . If you haven't already, download the latest release of the link:https://github.com/cloudfoundry/cli#installers-and-compressed-binaries[Cloud Foundry CLI] for your operating system and install it.
 
-. Multiple Pivotal Cloud Foundry instances are available for use during this workshop, provided by the instructor. Use the API target and username/password provided by the instructor..
-. Workshop examples will use http://run.pivotal.io[Pivotal Web Services] as the target cloud foundry instance, i.e. api.run.pivotal.io. If interested, create a trial http://run.pivotal.io[Pivotal Web Services] account to use Pivotal's web-hosted Cloud Foundry for labs.
+. Use the API target and username/password provided by the instructor..
 
 . From a command prompt, set the API target for the CLI:
 +
 ----
-$ cf api --skip-ssl-validation api.run.pivotal.io
+$ cf api --skip-ssl-validation api.sys.cf.pa.fedex.com
 ----
 
-. Login to Pivotal Cloud Foundry (or use information from your instructor to log on to Pivotal Cloud Foundry):
+. Login to Pivotal Cloud Foundry (‘Employee ID’ and password (LDAP)):
 +
 ----
-$ cf login -u <your e-mail> -p <your pw>
+$ cf login -u <Employee ID> -p <your pw>
 ----
 +
 Follow the prompts, choosing default organization and space.
@@ -41,7 +40,7 @@ The Gradle Wrapper will automatically download the appropriate version of Gradle
 . Push the application!
 +
 ----
-$ cf push
+$ cf push spring-music-{{your-initials}}
 ----
 +
 You should see output similar to the following listing. Take a look at the listing callouts for a play-by-play of what's happening:
@@ -66,10 +65,10 @@ Uploading 446.8K, 90 files
 Done uploading
 OK
 
-Stopping app spring-music in org Workshops / space user1 as swomack@pivotal.io...
+Stopping app spring-music in org Pivotal Workshop / space development as swomack@pivotal.io...
 OK
 
-Starting app spring-music in org Workshops / space user1 as swomack@pivotal.io...
+Starting app spring-music in org Pivotal Workshop / space development as swomack@pivotal.io...
 Downloading binary_buildpack...
 Downloading nodejs_buildpack...
 Downloading dotnet_core_buildpack...
@@ -127,7 +126,7 @@ OK
 
 App spring-music was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) &&  JAVA_HOME=$PWD/.java-buildpack/open_jdk_jre JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djavax.net.ssl.trustStore=$PWD/.java-buildpack/container_certificate_trust_store/truststore.jks -Djavax.net.ssl.trustStorePassword=java-buildpack-trust-store-password -Djava.endorsed.dirs=$PWD/.java-buildpack/tomcat/endorsed -Daccess.logging.enabled=false -Dhttp.port=$PORT" exec $PWD/.java-buildpack/tomcat/bin/catalina.sh run`
 
-Showing health and status for app spring-music in org Workshops / space user1 as swomack@pivotal.io...
+Showing health and status for app spring-music in org Pivotal Workshop / space development as swomack@pivotal.io...
 OK
 
 requested state: started
