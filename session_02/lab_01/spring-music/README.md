@@ -49,7 +49,7 @@ targeting a Cloud Foundry instance, and logging in, the application can be built
 ~~~
 $ ./gradlew assemble
 
-$ cf push
+$ cf push spring-music-{{your-initials}}
 ...
 requested state: started
 instances: 1/1

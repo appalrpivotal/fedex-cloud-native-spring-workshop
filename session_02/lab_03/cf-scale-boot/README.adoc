@@ -5,7 +5,7 @@ Demonstrate application instance scaling on Cloud Foundry with this simple (one 
 == Running on Cloud Foundry
 
 ----
-$ cf push
+$ cf push cf-scale-boot-{{your-initials}}
 ----
 
 == SCALE!
