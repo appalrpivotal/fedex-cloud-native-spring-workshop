@@ -8,7 +8,7 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 
 Time | Session
 ---- | -------
-8:30 AM - 9:00 AM | _Registration and Breakfast_
+8:30 AM - 9:00 AM | _Breakfast_
 9:00 AM - 9:30 AM | _Kickoff: Workshop Logistics, Pivotal Syntel Partnership, Fedex ‘Cloud Native’ Roadmap_ (Pivotal & Syntel)
 9:30 AM - 10:00 AM | _Kickoff, continued: Cloud Native Trends, How Pivotal Labs helps with Test Driven Development & Pair Programming_ (Pivotal)
 10:00AM - 10:30 AM | _Session 1: Cloud Native Architectures & Frameworks_
