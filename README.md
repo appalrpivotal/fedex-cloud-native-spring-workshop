@@ -8,23 +8,20 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 
 Time | Session
 ---- | -------
-8:30 AM - 9:00 AM | _Breakfast_
-9:00 AM - 9:30 AM | _Kickoff: Workshop Logistics, Pivotal Syntel Partnership, Fedex ‘Cloud Native’ Roadmap_ (Pivotal & Syntel)
-9:30 AM - 10:00 AM | _Kickoff, continued: Cloud Native Trends, How Pivotal Labs helps with Test Driven Development & Pair Programming_ (Pivotal)
-10:00AM - 10:30 AM | _Session 1: Cloud Native Architectures & Frameworks_
-11:00 AM- 11:15 AM | _Break_
-11:15 AM- 12:00 PM | _Session 2: Pushing your first application, with Labs*_
+9:00 AM - 9:30 AM | _Kickoff: Workshop Logistics_
+10:00 AM - 10:30 AM | _Session 1: Brian Gregory Introduction - Express Scripts Cloud Native Architectures & Frameworks_
+10:30 AM - 11:30 PM | _Session 2, 'cf push' enables continuous delivery_
+11:30 AM - 12:30 PM | _Session 3, So what's happening behind the scenes? Pivotal Cloud Foundry Overview_
 12:00 PM- 1:00 PM | _Lunch_
-1:00 AM - 2:00 PM | _Session 2, continued: So what's happening behind the scenes? Pivotal Cloud Foundry Overview_
-2:00 PM - 3:00 PM | _Session 3: Spring Boot Intro + Actuator, with Labs*_
-3:00 PM - 3:30 PM | _Wrap-up, Q&A, Feedback_
+1:00 PM - 1:45 PM | _Session 3: Spring Boot Intro + Actuator, with Labs*_
+2:00 PM - 2:30 PM | _Wrap-up, Q&A, Feedback_
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
 
 This is a _loose_ schedule for the day. We will adjust as necessary based on our pace through the material.
 
 The lectures for this workshop are generally light and are only intended to set the stage for the hands-on labs.
-The overwhelming majority of our time will be spent engaging with the technology directly!
+The overwhelming majority of our time will be spent engaging with the technology directly.
 
 ## Getting started
 
@@ -43,8 +40,8 @@ Start by downloading and installing the appropriate prerequisite tools.
 Next, download the course materials.  This can be accomplished either through the GitHub website by downloading a repository zip and unzipping locally, or if you have Git installed, use the following commands:
 
 ```
-$ git clone https://github.com/stwomack/fedex-cloud-native-spring-workshop.git
-$ cd fedex-cloud-native-spring-workshop/
+$ git clone https://github.com/stwomack/esi-cloud-native-spring-workshop.git
+$ cd esi-cloud-native-spring-workshop/
 ```
 
 **PCF Environments**
@@ -55,13 +52,13 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 ### _Session 1: Cloud Native Architectures & Frameworks_ [(Slides)](session_01/Session_01-Cloud_Native_Architectures_and_Frameworks-2xpg.pdf)
 
-### _Session 2: Pivotal Cloud Foundry Fundamentals_ 
+### _Session 2: Pivotal Cloud Foundry Fundamentals_
   - [Lab 1 - From Zero to Pushing Your First Application](session_02/lab_01/lab_01.adoc)
   - [Lab 2 - Binding to Cloud Foundry Services](session_02/lab_02/lab_02.adoc)
   - [Lab 3 - Scaling Applications](session_02/lab_03/lab_03.adoc)
   - [Lab 4 - Monitoring Applications](session_02/lab_04/lab_04.adoc)
 
-### _Lunch:_ 
+### _Lunch:_
 
 ### _Session 2, continued. What happens when I 'cf push'? Pivotal Cloud Foundry Overview_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
 
@@ -78,6 +75,6 @@ _Extra credit - labs can be done on your own!_
   - [Lab 9 - Circuit Breaker Dashboard](session_04/lab_09/lab_09.adoc)
 
 ## Speakers & Instructors
+- Brian Gregory, CTO Express Scripts, bgregory@express-scripts.com
 - Dan Kennedy, Pivotal Platform Architect, dkennedy@pivotal.io
-- Ravi Appalla, Pivotal Platform Architect, rappalla@pivotal.io
 - Steve Womack, Pivotal Platform Architect, swomack@pivotal.io
