@@ -6,7 +6,7 @@
 . Change to the lab directory:
 +
 ----
-$ cd $COURSE_HOME/session_03/lab_05/initial/hello-spring-boot
+$ cd $COURSE_HOME/session_04/lab_05/initial/hello-spring-boot
 ----
 
 . Import the project's `pom.xml` into your editor/IDE of choice.
@@ -25,7 +25,7 @@ $ cd $COURSE_HOME/session_03/lab_05/initial/hello-spring-boot
 . Build the application:
 +
 ----
-$ mvn package
+$ ./mvnw package
 ----
 
 . Run the application:
@@ -81,7 +81,7 @@ These will add the project's Maven coordinates to the `/info` endpoint. The Spri
 . Build the application:
 +
 ----
-$ mvn package
+$ ./mvnw package
 ----
 
 . Run the application:
@@ -153,7 +153,7 @@ This demo health indicator will randomize the health check.
 . Build the application:
 +
 ----
-$ mvn package
+$ ././mvnw package
 ----
 
 . Run the application:
@@ -237,7 +237,7 @@ public static void main(String[] args) {
 . Build the application:
 +
 ----
-$ mvn package
+$ ././mvnw package
 ----
 
 . Run the application:

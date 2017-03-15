@@ -60,7 +60,7 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ### _Lunch:_
 
-### _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
+### _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_ [(Slides)](session_03/Session_03-Cloud_Native_Architectures_and_Frameworks.pptx)
 
 ### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up-2xpg.pdf)
 
