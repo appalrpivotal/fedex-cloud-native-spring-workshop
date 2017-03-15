@@ -122,7 +122,7 @@ $ cd $COURSE_HOME/session_02/lab_01/orders-service
 . Using Maven, build and package the application:
 +
 ----
-$ mvn install
+$ mvnw install
 ----
 
 . Push the application!
