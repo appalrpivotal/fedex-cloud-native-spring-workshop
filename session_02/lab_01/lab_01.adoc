@@ -1,4 +1,4 @@
-= Lab 1 - From Zero to Pushing Your First Application
+= Lab 1 - Building and Pushing Your First Application
 
 == Target
 
@@ -32,7 +32,7 @@ JPA, Rest Repositories, MySQL, H2, Actuator, Lombok
 ----
 . Click 'Generate Project', and save the zip file to this directory $COURSE_HOME/session_02/lab_01 ($COURSE_HOME is a pointer to where you cloned this repo )
 . Unzip the project
-. Delete the .zip file, copy the manifest.yml file from this directory into the newly extracted project directory
+. Delete the .zip file, copy ( or move ) the manifest.yml file from this directory into the newly extracted project directory
 . Add the following properties to the file src/main/resources/application.properties
 +
 ```

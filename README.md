@@ -8,12 +8,13 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 
 Time | Session
 ---- | -------
-9:00 AM - 9:15 AM | _Session 1: Kickoff & Intro_ [(Slides)](session_01/ESI-WorkshopIntro.pptx)
+9:00 AM - 9:15 AM | _Kickoff & Intro_ 
 9:15 AM - 9:45 AM | _Session 1: Brian Gregory - Express Scripts Cloud_ [(Slides)](session_01/TBD.pptx)
-9:45 AM - 11:30 PM | _Session 2, Enabling Continuous Delivery with 'cf push' **LAB**_
+9:45 AM - 11:30 PM | _Session 2, Enabling Continuous Delivery with 'cf push' (*LABS*)_
 11:30 PM- 12:30 PM | _Lunch_
-12:30 PM - 1:00 PM | Cloud Native Architectures and Frameworks(Microservices, 12Factor Apps)
-12:30 PM - 1:30 PM | _Wrap-up, Q&A, Feedback_
+12:30 PM - 1:15 PM | _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
+1:15 PM - 1:30 PM | _Wrap-up, Q&A_
+1:30 PM - ?? | Continued working sessions for labs and/or "Deploy your own app"
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
 
@@ -47,23 +48,27 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ## Course Materials
 
-### _Session 1: Brian Gregory Introduction - Express Scripts Cloud_ [(Slides)](session_01/Session_01-TODO.pdf)
+### _Kickoff & Intro_ [(Slides)](session_01/ESI-WorkshopIntro.pptx)
+
+### _Session 1: Brian Gregory - Express Scripts Cloud_ [(Slides)](session_01/Session_01-TODO.pdf)
 
 ### _Session 2: Enabling Continuous Delivery with 'cf push'_
-  - [Lab 1 - From Zero to Pushing Your First Application](session_02/lab_01/lab_01.adoc)
+  - [Lab 1 - Building and Pushing Your First Application](session_02/lab_01/lab_01.adoc)
   - [Lab 2 - Binding to Cloud Foundry Services](session_02/lab_02/lab_02.adoc)
   - [Lab 3 - Scaling Applications](session_02/lab_03/lab_03.adoc)
   - [Lab 4 - Monitoring Applications](session_02/lab_04/lab_04.adoc)
 
 ### _Lunch:_
 
+### _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
+
 ### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up-2xpg.pdf)
 
-### _BONUS - Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
+### _BONUS - Session 4: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
 
-### _BONUS - Sessions 4_ [(Slides)](session_04/Session_04-Spring-Cloud-Services-2xpg.pdf)
+### _BONUS - Sessions 5_ [(Slides)](session_04/Session_04-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
   - [Lab 6 - Binding Spring Cloud Services](session_04/lab_06/lab_06.adoc)
   - [Lab 7 - Service Registry](session_04/lab_07/lab_07.adoc)
