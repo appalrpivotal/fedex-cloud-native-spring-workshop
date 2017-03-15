@@ -1,5 +1,5 @@
 # Cloud Native Workshop
-Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and Syntel for a full-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. This workshop will introduce cloud-native and Spring application development along with Pivotal Cloud Foundry.  The labs will leverage Spring Boot and Actuator, along with a bonus session for Spring Cloud (Netflix OSS)
+Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and ESI for a half-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. This workshop will introduce cloud-native and Spring application development along with Pivotal Cloud Foundry.  The labs will leverage Spring Boot, along with bonus sessions for and Actuator and Spring Cloud (Netflix OSS)
 
 **Events**
 - Stay informed for the [2017 SpringOne Platform](https://springoneplatform.io/) to be held in San Francisco, CA, December 4-7, 2017.
@@ -10,9 +10,9 @@ Time | Session
 ---- | -------
 9:00 AM - 9:15 AM | _Kickoff: Workshop Logistics_
 9:15 AM - 10:00 AM | _Session 1: Brian Gregory Introduction - Express Scripts Cloud_
-10:30 AM - 11:30 PM | _Session 2, 'cf push' enables continuous delivery_
-12:00 PM- 1:00 PM | _Lunch_
-2:00 PM - 2:30 PM | _Wrap-up, Q&A, Feedback_
+10:30 AM - 12:30 PM | _Session 2, Enabling Continuous Delivery with 'cf push' _
+12:30 PM- 1:30 PM | _Lunch_
+12:30 PM - 1:30 PM | _Wrap-up, Q&A, Feedback_
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
 
@@ -48,7 +48,7 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 ## Course Materials
 
-### _Session 1: Cloud Native Architectures & Frameworks_ [(Slides)](session_01/Session_01-Cloud_Native_Architectures_and_Frameworks-2xpg.pdf)
+### _Session 1: Cloud Native Architectures & Frameworks_ [(Slides)](session_01/Session_01-TODO.pdf)
 
 ### _Session 2: Pivotal Cloud Foundry Fundamentals_
   - [Lab 1 - From Zero to Pushing Your First Application](session_02/lab_01/lab_01.adoc)
@@ -57,8 +57,6 @@ Finally, in order to perform the labs, you must be connected or logged into a li
   - [Lab 4 - Monitoring Applications](session_02/lab_04/lab_04.adoc)
 
 ### _Lunch:_
-
-### _Session 2, continued. What happens when I 'cf push'? Pivotal Cloud Foundry Overview_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
 
 ### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up-2xpg.pdf)
 
