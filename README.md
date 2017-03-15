@@ -1,5 +1,5 @@
 # Cloud Native Workshop
-Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and ESI for a half-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. This workshop will introduce cloud-native and Spring application development along with Pivotal Cloud Foundry.  The labs will leverage Spring Boot, along with bonus sessions for and Actuator and Spring Cloud (Netflix OSS)
+Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and ESI for a half-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. The labs will leverage Spring Boot, along with bonus sessions for and Actuator and Spring Cloud (Netflix OSS)
 
 **Events**
 - Stay informed for the [2017 SpringOne Platform](https://springoneplatform.io/) to be held in San Francisco, CA, December 4-7, 2017.
