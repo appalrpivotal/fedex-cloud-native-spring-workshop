@@ -48,9 +48,9 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 ## Course Materials
 
-### _Session 1: Cloud Native Architectures & Frameworks_ [(Slides)](session_01/Session_01-TODO.pdf)
+### _Session 1: Brian Gregory Introduction - Express Scripts Cloud_ [(Slides)](session_01/Session_01-TODO.pdf)
 
-### _Session 2: Pivotal Cloud Foundry Fundamentals_
+### _Session 2: Enabling Continuous Delivery with 'cf push'_
   - [Lab 1 - From Zero to Pushing Your First Application](session_02/lab_01/lab_01.adoc)
   - [Lab 2 - Binding to Cloud Foundry Services](session_02/lab_02/lab_02.adoc)
   - [Lab 3 - Scaling Applications](session_02/lab_03/lab_03.adoc)
@@ -60,11 +60,11 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 ### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up-2xpg.pdf)
 
-### _BONUS - Sessions 3 & 4_ 
 ### _BONUS - Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
+_Extra credit - labs can be done on your own!_
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
 
-### _BONUS - Sessions 3 & 4_ [(Slides)](session_04/Session_04-Spring-Cloud-Services-2xpg.pdf)
+### _BONUS - Sessions 4_ [(Slides)](session_04/Session_04-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
   - [Lab 6 - Binding Spring Cloud Services](session_04/lab_06/lab_06.adoc)
   - [Lab 7 - Service Registry](session_04/lab_07/lab_07.adoc)
