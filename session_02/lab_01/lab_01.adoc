@@ -9,7 +9,7 @@
 . From a command prompt, set the API target for the CLI:
 +
 ----
-$ cf api --skip-ssl-validation api.sys.cf.pa.fedex.com
+$ cf api --skip-ssl-validation https://api.run.pivotal.io
 ----
 
 . Login to Pivotal Cloud Foundry (‘Employee ID’ and password (LDAP)):
@@ -23,24 +23,93 @@ Follow the prompts, choosing default organization and space.
 == Crate Application
 
 . Go to http://start.spring.io/ in your browser
-. Change the package name to com.{yourlastname}. For example: com.womack
+. Change the package name to com.workshop .
 . Change the app name from demo to orders-service
 . Add the following dependencies:
 +
 ----
-JPA, Rest Repositories, H2, Actuator
+JPA, Rest Repositories, MySQL, H2, Actuator, Lombok
 ----
 . Click 'Generate Project', and save the zip file to this directory $COURSE_HOME/session_02/lab_01
 . Unzip the project
 . Delete the .zip file, copy the manifest.yml file from this directory into the newly extracted project directory
-. Add the following yaml stanza to a new file src/main/resources/bootstrap.yml (This is optional, but will be useful to view actuator endpoints later in the workshop)
+. Add the following properties to the file src/main/resources/application.properties
 +
 ```
----
-security:
-  basic:
-    enabled: false
+security.basic.enabled=false
+management.security.enabled=false
 ```
+. Create a class, Order.java, in src/main/java/com/workshop , and paste in the following contents:
++
+```
+package com.workshop;
+
+import lombok.Data;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@lombok.ToString
+@Entity
+@Data
+public class Order {
+    @Id
+    @GeneratedValue
+    private Long id;
+    private String orderNumber;
+    private String customerName;
+
+    public Order(String orderNumber, String customerName) {
+        this.orderNumber = orderNumber;
+        this.customerName = customerName;
+    }
+}
+
+```
++
+Note that project Lombok takes care of boilerplate code like getters & setters
+. Finally, replace the contents of /src/main/java/com/workshop/OrderServiceApplication.java with the following
+```
+package com.workshop;
+
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.repository.query.Param;
+import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.data.rest.core.annotation.RestResource;
+
+import java.util.Collection;
+import java.util.stream.Stream;
+
+@SpringBootApplication
+public class OrdersServiceApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(OrdersServiceApplication.class, args);
+    }
+
+    @Bean
+    CommandLineRunner commandLineRunner(OrderRepository orderRepository) {
+        return args -> {
+            Stream.of("47774", "77333", "99333", "27772")
+                    .forEach(customerNumber -> orderRepository.save(new Order(customerNumber, "Customer1")));
+            orderRepository.findAll().forEach(System.out::println);
+        };
+    }
+
+    @RepositoryRestResource
+    interface OrderRepository extends PagingAndSortingRepository<Order, Long> {
+
+        @RestResource(path = "by-name")
+        Collection<Order> findByCustomerName(@Param("customerName") String customerName);
+    }
+}
+```
+
 
 == Build and Push!
 
@@ -179,5 +248,12 @@ You can get the same output at any time by typing `cf app orders-service-bridele
 +
 In the example `cf push` above, the `urls:` section of the application health reports `orders-service-brideless-subhero.cfapps.io`, so http://orders-service-brideless-subhero.cfapps.io would have been used to examine this example deployed application. But use the url from your application deployment health report.
 
-Because our application knows nothing about any backing databases, and h2 is on the classpath, h2's in memory database will be used when this application starts up. In the next lab, we'll bind a backing database
+Because our application knows nothing about any backing databases, and h2 is on the classpath, h2's in memory database will be used when this application starts up. Look at the /health actuator endpoint of your application to see that there's no backing database reported. In the next lab, we'll bind a backing database
+```
+"db": {
+"status": "UP",
+"database": "H2",
+"hello": 1
+}
+```
 link:/README.md#course-materials[Course Materials home] | link:/session_02/lab_02/lab_02.adoc[Lab 2 - Binding to Cloud Foundry Services]
