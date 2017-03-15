@@ -20,103 +20,117 @@ $ cf login -u <Employee ID> -p <your pw>
 +
 Follow the prompts, choosing default organization and space.
 
+== Crate Application
+
+. Go to http://start.spring.io/ in your browser
+. Change the package name to com.{yourlastname}. For example: com.womack
+. Change the app name from demo to orders-service
+. Add the following dependencies:
++
+----
+JPA, Rest Repositories, H2, Actuator
+----
+. Click 'Generate Project', and save the zip file to this directory $COURSE_HOME/session_02/lab_01
+. Unzip the project
+. Delete the .zip file, copy the manifest.yml file from this directory into the newly extracted project directory
+. Add the following yaml stanza to a new file src/main/resources/bootstrap.yml (This is optional, but will be useful to view actuator endpoints later in the workshop)
++
+```
+---
+security:
+  basic:
+    enabled: false
+```
+
 == Build and Push!
 
-. Change to the _Spring Music_ sample application directory:
+. You should still be in the _Orders Service_ application directory:
 +
 ----
-$ cd $COURSE_HOME/session_02/lab_01/spring-music
+$ cd $COURSE_HOME/session_02/lab_01/orders-service
 ----
 
-. Using the Gradle Wrapper, build and package the application:
+. Using Maven, build and package the application:
 +
 ----
-$ ./gradlew assemble
+$ mvn install
 ----
-+
-The Gradle Wrapper will automatically download the appropriate version of Gradle for this project along with all of _Spring Music_'s dependencies. This may take a few moments.
-
 
 . Push the application!
 +
 ----
-$ cf push spring-music-{{your-initials}}
+$ cf push
 ----
 +
 You should see output similar to the following listing. Take a look at the listing callouts for a play-by-play of what's happening:
 +
 ====
 ----
-  spring-music git:(master) cf push
-Using manifest file /Users/swomack/workspace-workshops/fedex-cloud-native-spring-workshop/session_02/lab_01/spring-music/manifest.yml
+➜  orders-service git:(master) ✗ cf push
+Using manifest file /Users/swomack/workspace-workshops/esi-cloud-native-spring-workshop/session_02/lab_01/orders-service/manifest.yml
 
-Updating app spring-music in org Workshop / space user1 as swomack@pivotal.io...
+Creating app orders-service-brideless-subhero in org Express-Scripts / space Workshop as swomack@pivotal.io...
 OK
 
-Creating route spring-music-undredged-nonproductiveness.cfapps.io...
+Creating route orders-service-anachronous-glycoprotein.cfapps.io...
 OK
 
-Binding spring-music-undredged-nonproductiveness.cfapps.io to spring-music...
+Binding orders-service-anachronous-glycoprotein.cfapps.io to orders-service-brideless-subhero...
 OK
 
-Uploading spring-music...
-Uploading app files from: /var/folders/gx/chs6597d31n1v5ns2r6954040000gn/T/unzipped-app314850399
-Uploading 446.8K, 90 files
+Uploading orders-service-brideless-subhero...
+Uploading app files from: /var/folders/gx/chs6597d31n1v5ns2r6954040000gn/T/unzipped-app422178702
+Uploading 461K, 95 files
 Done uploading
 OK
 
-Stopping app spring-music in org Pivotal Workshop / space development as swomack@pivotal.io...
-OK
-
-Starting app spring-music in org Pivotal Workshop / space development as swomack@pivotal.io...
+Starting app orders-service-brideless-subhero in org Express-Scripts / space Workshop as swomack@pivotal.io...
 Downloading binary_buildpack...
 Downloading nodejs_buildpack...
-Downloading dotnet_core_buildpack...
-Downloading ruby_buildpack...
-Downloading dotnet_core_buildpack_beta...
-Downloaded binary_buildpack
 Downloading go_buildpack...
-Downloaded dotnet_core_buildpack_beta
-Downloaded dotnet_core_buildpack
-Downloading staticfile_buildpack...
-Downloaded ruby_buildpack
-Downloading java_buildpack...
+Downloading dotnet_core_buildpack...
 Downloading python_buildpack...
-Downloaded nodejs_buildpack
+Downloaded dotnet_core_buildpack
 Downloading php_buildpack...
-Downloaded java_buildpack
-Downloaded staticfile_buildpack
-Downloaded php_buildpack
-Downloaded go_buildpack
+Downloaded nodejs_buildpack
+Downloading dotnet_core_buildpack_beta...
+Downloading java_buildpack...
 Downloaded python_buildpack
+Downloaded dotnet_core_buildpack_beta
+Downloading staticfile_buildpack...
+Downloaded php_buildpack
+Downloading ruby_buildpack...
+Downloaded go_buildpack
+Downloaded binary_buildpack
+Downloaded ruby_buildpack
+Downloaded staticfile_buildpack
+Downloaded java_buildpack
 Creating container
 Successfully created container
 Downloading app package...
-Downloaded app package (20.1M)
------> Java Buildpack Version: v3.13 (offline) | https://github.com/cloudfoundry/java-buildpack.git#03b493f
+Downloaded app package (25.6M)
+-----> Java Buildpack Version: v3.14 (offline) | https://github.com/cloudfoundry/java-buildpack.git#d5d58c6
 -----> Downloading Open Jdk JRE 1.8.0_121 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_121.tar.gz (found in cache)
-       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.1s)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.2s)
 -----> Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (found in cache)
-       Memory Settings: -Xss349K -Xmx681574K -XX:MaxMetaspaceSize=104857K -Xms681574K -XX:MetaspaceSize=104857K
+       Memory Settings: -XX:MaxMetaspaceSize=104857K -Xms681574K -XX:MetaspaceSize=104857K -Xss349K -Xmx681574K
 -----> Downloading Container Certificate Trust Store 2.0.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-certificate-trust-store/container-certificate-trust-store-2.0.0_RELEASE.jar (found in cache)
        Adding certificates to .java-buildpack/container_certificate_trust_store/truststore.jks (0.4s)
 -----> Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
------> Downloading Tomcat Instance 8.0.41 from https://java-buildpack.cloudfoundry.org/tomcat/tomcat-8.0.41.tar.gz (found in cache)
-       Expanding Tomcat Instance to .java-buildpack/tomcat (0.1s)
------> Downloading Tomcat Lifecycle Support 2.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/tomcat-lifecycle-support/tomcat-lifecycle-support-2.5.0_RELEASE.jar (found in cache)
------> Downloading Tomcat Logging Support 2.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/tomcat-logging-support/tomcat-logging-support-2.5.0_RELEASE.jar (found in cache)
------> Downloading Tomcat Access Logging Support 2.5.0_RELEASE from https://java-buildpack.cloudfoundry.org/tomcat-access-logging-support/tomcat-access-logging-support-2.5.0_RELEASE.jar (found in cache)
 Exit status 0
 Uploading droplet, build artifacts cache...
 Uploading build artifacts cache...
 Uploading droplet...
 Uploaded build artifacts cache (109B)
-Uploaded droplet (73M)
+Uploaded droplet (71M)
 Uploading complete
 Destroying container
 Successfully destroyed container
 
 0 of 1 instances running, 1 starting
+0 of 1 instances running, 1 starting
+0 of 1 instances running, 1 starting
+
 1 of 1 instances running
 
 App started
@@ -124,21 +138,23 @@ App started
 
 OK
 
-App spring-music was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) &&  JAVA_HOME=$PWD/.java-buildpack/open_jdk_jre JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djavax.net.ssl.trustStore=$PWD/.java-buildpack/container_certificate_trust_store/truststore.jks -Djavax.net.ssl.trustStorePassword=java-buildpack-trust-store-password -Djava.endorsed.dirs=$PWD/.java-buildpack/tomcat/endorsed -Daccess.logging.enabled=false -Dhttp.port=$PORT" exec $PWD/.java-buildpack/tomcat/bin/catalina.sh run`
+App orders-service-brideless-subhero was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) && JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djavax.net.ssl.trustStore=$PWD/.java-buildpack/container_certificate_trust_store/truststore.jks -Djavax.net.ssl.trustStorePassword=java-buildpack-trust-store-password" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher`
 
-Showing health and status for app spring-music in org Pivotal Workshop / space development as swomack@pivotal.io...
+Showing health and status for app orders-service-brideless-subhero in org Express-Scripts / space Workshop as swomack@pivotal.io...
 OK
 
 requested state: started
 instances: 1/1
 usage: 512M x 1 instances
-urls: spring-music-esi1.cfapps.io, spring-music-unrecalled-stinkweed.cfapps.io, spring-music-undredged-nonproductiveness.cfapps.io
-last uploaded: Sat Feb 18 19:34:01 UTC 2017
+urls: orders-service-anachronous-glycoprotein.cfapps.io
+last uploaded: Wed Mar 15 18:09:48 UTC 2017
 stack: cflinuxfs2
-buildpack: container-certificate-trust-store=2.0.0_RELEASE java-buildpack=v3.13-offline-https://github.com/cloudfoundry/java-buildpack.git#03b493f open-jdk-like-jre=1.8.0_121 open-jdk-like-memory-calculator=2.0.2_RELEASE spring-auto-reconfiguration=1.10.0_RELEASE...
+buildpack: container-certificate-trust-store=2.0.0_RELEASE java-buildpack=v3.14-offline-https://github.com/cloudfoundry/java-buildpack.git#d5d58c6 java-main open-jdk-like-jre=1.8.0_121 open-jdk-like-memory-calculator=2.0.2_RELEASE spring-auto-reconfiguration=1.10...
 
-     state     since                    cpu    memory           disk           details
-#0   running   2017-02-18 01:34:56 PM   0.0%   222.1M of 512M   154.2M of 1G
+     state     since                    cpu      memory         disk         details
+#0   running   2017-03-15 01:10:53 PM   103.0%   329M of 512M   152M of 1G
+➜  orders-service git:(master) ✗
+
 ----
 <1> The CLI is using a manifest to provide necessary configuration details such as application name, memory to be allocated, and path to the application artifact.
 Take a look at `manifest.yml` to see how.

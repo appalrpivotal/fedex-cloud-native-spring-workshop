@@ -1,5 +1,5 @@
 # Cloud Native Workshop
-Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and ESI for a half-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. The labs will leverage Spring Boot, along with bonus sessions for and Actuator and Spring Cloud (Netflix OSS)
+Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and ESI for a half-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. The labs will leverage Spring Boot, along with bonus sessions for Actuator and Spring Cloud (Netflix OSS)
 
 **Events**
 - Stay informed for the [2017 SpringOne Platform](https://springoneplatform.io/) to be held in San Francisco, CA, December 4-7, 2017.
@@ -10,7 +10,7 @@ Time | Session
 ---- | -------
 9:00 AM - 9:15 AM | _Kickoff_
 9:15 AM - 10:00 AM | _Session 1: Brian Gregory - Express Scripts Cloud_
-10:30 AM - 12:30 PM | _Session 2, Enabling Continuous Delivery with 'cf push'_
+10:30 AM - 12:30 PM | _Session 2, Enabling Continuous Delivery with 'cf push' **LAB**_
 12:30 PM- 1:30 PM | _Lunch_
 12:30 PM - 1:30 PM | _Wrap-up, Q&A, Feedback_
 
@@ -44,7 +44,7 @@ $ cd esi-cloud-native-spring-workshop/
 
 **PCF Environments**
 
-Finally, in order to perform the labs, you must be connected or logged into a live PCF environment.
+In order to perform the labs, you must be connected or logged into a live PCF environment.
 
 ## Course Materials
 
@@ -72,6 +72,6 @@ _Extra credit - labs can be done on your own!_
   - [Lab 9 - Circuit Breaker Dashboard](session_04/lab_09/lab_09.adoc)
 
 ## Speakers & Instructors
-- Brian Gregory, CTO Express Scripts, bgregory@express-scripts.com
-- Dan Kennedy, Pivotal Platform Architect, dkennedy@pivotal.io
-- Steve Womack, Pivotal Platform Architect, swomack@pivotal.io
+- Brian Gregory, Express Scripts, bgregory@express-scripts.com
+- Dan Kennedy, Pivotal, dkennedy@pivotal.io
+- Steve Womack, Pivotal, swomack@pivotal.io
