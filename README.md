@@ -8,12 +8,10 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 
 Time | Session
 ---- | -------
-9:00 AM - 9:30 AM | _Kickoff: Workshop Logistics_
-10:00 AM - 10:30 AM | _Session 1: Brian Gregory Introduction - Express Scripts Cloud Native Architectures & Frameworks_
+9:00 AM - 9:15 AM | _Kickoff: Workshop Logistics_
+9:15 AM - 10:00 AM | _Session 1: Brian Gregory Introduction - Express Scripts Cloud_
 10:30 AM - 11:30 PM | _Session 2, 'cf push' enables continuous delivery_
-11:30 AM - 12:30 PM | _Session 3, So what's happening behind the scenes? Pivotal Cloud Foundry Overview_
 12:00 PM- 1:00 PM | _Lunch_
-1:00 PM - 1:45 PM | _Session 3: Spring Boot Intro + Actuator, with Labs*_
 2:00 PM - 2:30 PM | _Wrap-up, Q&A, Feedback_
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
@@ -62,12 +60,13 @@ Finally, in order to perform the labs, you must be connected or logged into a li
 
 ### _Session 2, continued. What happens when I 'cf push'? Pivotal Cloud Foundry Overview_ [(Slides)](session_02/Session_02-Pivotal_Cloud_Foundry-The_Cloud_Native_Platform-2xpg.pdf)
 
-### _Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
-  - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
-
 ### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up-2xpg.pdf)
 
-### _BONUS - Session 4: Spring Cloud Services on Cloud Foundry_ [(Slides)](session_04/Session_04-Spring-Cloud-Services-2xpg.pdf)
+### _BONUS - Sessions 3 & 4_ 
+### _BONUS - Session 3: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
+  - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_03/lab_05/lab_05.adoc)
+
+### _BONUS - Sessions 3 & 4_ [(Slides)](session_04/Session_04-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
   - [Lab 6 - Binding Spring Cloud Services](session_04/lab_06/lab_06.adoc)
   - [Lab 7 - Service Registry](session_04/lab_07/lab_07.adoc)
