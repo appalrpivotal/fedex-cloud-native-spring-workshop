@@ -9,9 +9,10 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 Time | Session
 ---- | -------
 9:00 AM - 9:15 AM | _Session 1: Kickoff & Intro_ [(Slides)](session_01/ESI-WorkshopIntro.pptx)
-9:15 AM - 10:00 AM | _Session 1: Brian Gregory - Express Scripts Cloud_ [(Slides)](session_01/TBD.pptx)
-10:30 AM - 12:30 PM | _Session 2, Enabling Continuous Delivery with 'cf push' **LAB**_
-12:30 PM- 1:30 PM | _Lunch_
+9:15 AM - 9:45 AM | _Session 1: Brian Gregory - Express Scripts Cloud_ [(Slides)](session_01/TBD.pptx)
+9:45 AM - 11:30 PM | _Session 2, Enabling Continuous Delivery with 'cf push' **LAB**_
+11:30 PM- 12:30 PM | _Lunch_
+12:30 PM - 1:00 PM | Cloud Native Architectures and Frameworks(Microservices, 12Factor Apps)
 12:30 PM - 1:30 PM | _Wrap-up, Q&A, Feedback_
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
@@ -27,8 +28,6 @@ The overwhelming majority of our time will be spent engaging with the technology
 
 Start by downloading and installing the appropriate prerequisite tools.
 - [Cloud Foundry CLI](https://goo.gl/M0pH4i) to interact with a cloud foundry instance
-- [Apache Maven](http://info.pivotal.io/HI002010A6ZlRJR1NeU00eC) to build labs using Maven
-- [Gradle](https://services.gradle.org/distributions/gradle-3.1-all.zip) to build labs using Gradle
 - [Git Client](https://git-scm.com/downloads) to clone Github repo or download and unzip
 - An IDE, like [Spring Tool Suite](https://spring.io/tools/sts/all) or [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 - [Java SE Development Kit](http://info.pivotal.io/n0I60i3021AN0JU0le10CRR)

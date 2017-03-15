@@ -30,7 +30,7 @@ Follow the prompts, choosing default organization and space.
 ----
 JPA, Rest Repositories, MySQL, H2, Actuator, Lombok
 ----
-. Click 'Generate Project', and save the zip file to this directory $COURSE_HOME/session_02/lab_01
+. Click 'Generate Project', and save the zip file to this directory $COURSE_HOME/session_02/lab_01 ($COURSE_HOME is a pointer to where you cloned this repo )
 . Unzip the project
 . Delete the .zip file, copy the manifest.yml file from this directory into the newly extracted project directory
 . Add the following properties to the file src/main/resources/application.properties
@@ -45,26 +45,28 @@ management.security.enabled=false
 package com.workshop;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
-@lombok.ToString
 @Entity
 @Data
-public class Order {
+@NoArgsConstructor()
+public class OrderItem {
     @Id
     @GeneratedValue
     private Long id;
     private String orderNumber;
     private String customerName;
 
-    public Order(String orderNumber, String customerName) {
+    public OrderItem(String orderNumber, String customerName) {
         this.orderNumber = orderNumber;
         this.customerName = customerName;
     }
 }
+
 
 ```
 +
@@ -75,6 +77,7 @@ package com.workshop;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.repository.PagingAndSortingRepository;
@@ -85,7 +88,15 @@ import org.springframework.data.rest.core.annotation.RestResource;
 import java.util.Collection;
 import java.util.stream.Stream;
 
+@RepositoryRestResource
+interface OrderRepository extends PagingAndSortingRepository<OrderItem, Long> {
+
+    @RestResource(path = "by-name")
+    Collection<OrderItem> findByCustomerName(@Param("customerName") String customerName);
+}
+
 @SpringBootApplication
+@EnableAutoConfiguration
 public class OrdersServiceApplication {
 
     public static void main(String[] args) {
@@ -96,16 +107,9 @@ public class OrdersServiceApplication {
     CommandLineRunner commandLineRunner(OrderRepository orderRepository) {
         return args -> {
             Stream.of("47774", "77333", "99333", "27772")
-                    .forEach(customerNumber -> orderRepository.save(new Order(customerNumber, "Customer1")));
+                    .forEach(orderNumber -> orderRepository.save(new OrderItem(orderNumber, "Customer1")));
             orderRepository.findAll().forEach(System.out::println);
         };
-    }
-
-    @RepositoryRestResource
-    interface OrderRepository extends PagingAndSortingRepository<Order, Long> {
-
-        @RestResource(path = "by-name")
-        Collection<Order> findByCustomerName(@Param("customerName") String customerName);
     }
 }
 ```
