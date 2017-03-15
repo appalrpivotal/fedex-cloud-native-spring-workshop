@@ -131,7 +131,7 @@ Once the application is running again, revisit or refresh the /health actuator e
 ```
 "db": {
 "status": "UP",
-"database": "H2",
+"database": "MySQL",
 "hello": 1
 }
 ```
