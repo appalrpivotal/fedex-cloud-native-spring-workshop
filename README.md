@@ -9,7 +9,7 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 Time | Session
 ---- | -------
 9:00 AM - 9:15 AM | _Kickoff & Intro_ 
-9:15 AM - 9:45 AM | _Session 1: Brian Gregory - Express Scripts Cloud_
+9:15 AM - 9:45 AM | _Session 1: Brian Gregory - ESI Cloud_
 9:45 AM - 11:30 PM | _Session 2, Enabling Continuous Delivery with 'cf push' (*LABS*)_
 11:30 PM- 12:30 PM | _Lunch_
 12:30 PM - 1:15 PM | _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
