@@ -50,7 +50,7 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ### _Kickoff & Intro_ [(Slides)](session_01/ESI-WorkshopIntro.pptx)
 
-### _Session 1: Brian Gregory - Express Scripts Cloud_ [(Slides)](session_01/Session_01-TODO.pdf)
+### _Session 1: Brian Gregory - ESI Cloud_ [(Slides)](session_01/Session_01-TODO.pdf)
 
 ### _Session 2: Enabling Continuous Delivery with 'cf push'_
   - [Lab 1 - Building and Pushing Your First Application](session_02/lab_01/lab_01.adoc)
@@ -76,6 +76,6 @@ _Extra credit - labs can be done on your own!_
   - [Lab 9 - Circuit Breaker Dashboard](session_04/lab_09/lab_09.adoc)
 
 ## Speakers & Instructors
-- Brian Gregory, Express Scripts, bgregory@express-scripts.com
+- Brian Gregory, ESI, bgregory@express-scripts.com
 - Dan Kennedy, Pivotal, dkennedy@pivotal.io
 - Steve Womack, Pivotal, swomack@pivotal.io
