@@ -38,8 +38,8 @@ Start by downloading and installing the appropriate prerequisite tools.
 Next, download the course materials.  This can be accomplished either through the GitHub website by downloading a repository zip and unzipping locally, or if you have Git installed, use the following commands:
 
 ```
-$ git clone https://github.com/stwomack/esi-cloud-native-spring-workshop.git
-$ cd esi-cloud-native-spring-workshop/
+$ git clone https://github.com/stwomack/cloud-native-spring-workshop.git
+$ cd cloud-native-spring-workshop/
 ```
 
 **PCF Environments**

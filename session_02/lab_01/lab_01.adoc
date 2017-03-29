@@ -140,7 +140,7 @@ You should see output similar to the following listing. Take a look at the listi
 ====
 ----
 ➜  orders-service git:(master) ✗ cf push
-Using manifest file /Users/swomack/workspace-workshops/esi-cloud-native-spring-workshop/session_02/lab_01/orders-service/manifest.yml
+Using manifest file /Users/swomack/workspace-workshops/cloud-native-spring-workshop/session_02/lab_01/orders-service/manifest.yml
 
 Creating app orders-service-brideless-subhero in org Express-Scripts / space Workshop as swomack@pivotal.io...
 OK
