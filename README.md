@@ -70,10 +70,10 @@ _Extra credit - labs can be done on your own!_
 
 ### _BONUS - Sessions 5_ [(Slides)](session_04/Session_04-Spring-Cloud-Services-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
-  - [Lab 6 - Binding Spring Cloud Services](session_04/lab_05/lab_05.adoc)
-  - [Lab 7 - Service Registry](session_04/lab_07/lab_07.adoc)
-  - [Lab 8 - Config Server](session_04/lab_08/lab_08.adoc)
-  - [Lab 9 - Circuit Breaker Dashboard](session_04/lab_09/lab_09.adoc)
+  - [Lab 6 - Binding Spring Cloud Services](session_05/lab_06/lab_06.adoc)
+  - [Lab 7 - Service Registry](session_05/lab_07/lab_07.adoc)
+  - [Lab 8 - Config Server](session_05/lab_08/lab_08.adoc)
+  - [Lab 9 - Circuit Breaker Dashboard](session_05/lab_09/lab_09.adoc)
 
 ## Speakers & Instructors
 - Brian Gregory, ESI, bgregory@express-scripts.com
