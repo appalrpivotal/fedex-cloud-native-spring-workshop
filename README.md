@@ -52,11 +52,13 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ## Course Materials
 
-### _Breakfast and Registration_
+### _Breakfast and Introductions_
 
-### _Session 1: Workshop Kickoff - Pivotal-Syntel Partnership_ [(Slides)](session_01/Session_01-kickoff.pptx)
+### _Workshop Kickoff - Pivotal-Syntel Partnership_ [(Slides)](session_01/Session_01-kickoff.pptx)
 
-### _Session 2: Enabling Continuous Delivery with 'cf push'_
+### _Cloud Native Introduction_ [(Slides)](session_01/fedex-WorkshopIntro.pptx)
+
+### _Enabling Continuous Delivery with 'cf push'_
   - [Lab 1 - Building and Pushing Your First Application](session_02/lab_01/lab_01.adoc)
   - [Lab 2 - Binding to Cloud Foundry Services](session_02/lab_02/lab_02.adoc)
   - [Lab 3 - Scaling Applications](session_02/lab_03/lab_03.adoc)
@@ -64,13 +66,13 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ### _Lunch:_
 
-### _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_ [(Slides)](Session_03/Session_03-Cloud_Native_Architectures_and_Frameworks.pptx)
+### _Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_ [(Slides)](Session_03/Session_03-Cloud_Native_Architectures_and_Frameworks.pptx)
 
-### _Session 4, Spring Boot Overview_ [(Slides)](session_04/Session_04-Spring-Boot-Overview.pptx)
+### _Spring Boot Overview_ [(Slides)](session_04/Session_04-Spring-Boot-Overview.pptx)
 
 ### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up.pptx)
 
-### _BONUS - Session 5: Spring Boot and Actuator_ [(Slides)](session_04/Session_04-Spring_Boot_Actuator-2xpg.pdf)
+### _BONUS - Spring Boot and Actuator_ [(Slides)](session_04/Session_04-Spring_Boot_Actuator-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_04/lab_05/lab_05.adoc)
 
