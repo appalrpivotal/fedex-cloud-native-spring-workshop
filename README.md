@@ -8,11 +8,12 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 
 Time | Session
 ---- | -------
-8:30 AM - 9:00 AM | _Breakfast & Resgistration_ 
-9:00 AM - 9:30 AM | _Session 1: Workshop Kickoff_
-9:30 AM - 11:00 PM | _Session 2, Enabling Continuous Delivery with 'cf push' (*LABS*)_
+8:00 AM - 8:30 AM | _Breakfast & Introductions_ 
+8:30 AM - 9:00 AM | _Workshop Kickoff_
+8:30 AM - 9:00 AM | _Cloud Native Introduction_
+9:30 AM - 11:00 PM | _Enabling Continuous Delivery with 'cf push' (*LABS*)_
 11:00 PM- 11:15 PM | _Break_
-11:15 PM - 12:00 PM | _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
+11:15 PM - 12:00 PM | _Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
 12:00 PM - 1:00 PM | _Lunch_
 1:00 PM - 2:00 PM | _Spring Overview_
 2:00 PM - 3:00 PM | _Developer Workshop (Continued)_
