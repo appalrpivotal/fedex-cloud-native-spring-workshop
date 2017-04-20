@@ -1,5 +1,5 @@
 # Cloud Native Workshop
-Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and ESI for a half-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. The labs will leverage Spring Boot, along with bonus sessions for Actuator and Spring Cloud (Netflix OSS)
+Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal and Fedex for a half-day hands-on workshop to introduce key concepts in modern cloud native application development and delivery. The labs will leverage Spring Boot, along with bonus sessions for Actuator and Spring Cloud (Netflix OSS)
 
 **Events**
 - Stay informed for the [2017 SpringOne Platform](https://springoneplatform.io/) to be held in San Francisco, CA, December 4-7, 2017.
@@ -8,13 +8,16 @@ Cloud Native Application development with Spring and Cloud Foundry. Join Pivotal
 
 Time | Session
 ---- | -------
-9:00 AM - 9:15 AM | _Kickoff & Intro_ 
-9:15 AM - 9:45 AM | _Session 1: Brian Gregory - ESI Cloud_
-9:45 AM - 11:30 PM | _Session 2, Enabling Continuous Delivery with 'cf push' (*LABS*)_
-11:30 PM- 12:30 PM | _Lunch_
-12:30 PM - 1:15 PM | _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
-1:15 PM - 1:30 PM | _Wrap-up, Q&A_
-1:30 PM - ?? | Continued working sessions for labs and/or "Deploy your own app"
+8:30 AM - 9:00 AM | _Breakfast & Resgistration_ 
+9:00 AM - 9:30 AM | _Session 1: Workshop Kickoff_
+9:30 AM - 11:00 PM | _Session 2, Enabling Continuous Delivery with 'cf push' (*LABS*)_
+11:00 PM- 11:15 PM | _Break_
+11:15 PM - 12:00 PM | _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
+12:00 PM - 1:00 PM | _Lunch_
+1:00 PM - 2:00 PM | _Spring Overview_
+2:00 PM - 3:00 PM | _Developer Workshop (Continued)_
+3:00 PM - 3:30 PM | _Wrap-up, Q&A_
+
 
 _*See [Course Materials](#course-materials) section below for slides and labs_
 
@@ -38,8 +41,8 @@ Start by downloading and installing the appropriate prerequisite tools.
 Next, download the course materials.  This can be accomplished either through the GitHub website by downloading a repository zip and unzipping locally, or if you have Git installed, use the following commands:
 
 ```
-$ git clone https://github.com/stwomack/cloud-native-spring-workshop.git
-$ cd cloud-native-spring-workshop/
+$ git https://github.com/appalrpivotal/fedex-cloud-native-spring-workshop.git
+$ cd fedex-cloud-native-spring-workshop/
 ```
 
 **PCF Environments**
@@ -48,9 +51,9 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ## Course Materials
 
-### _Kickoff & Intro_ [(Slides)](session_01/ESI-WorkshopIntro.pptx)
+### _Kickoff & Intro_ [(Slides)](session_01/Fedex-WorkshopIntro.pptx)
 
-### _Session 1: Brian Gregory - ESI Cloud_ [(Slides)](session_01/Session_01-TODO.pdf)
+### _Session 1: Brian Gregory - ESI Cloud_ [(Slides)](session_01/Session_01-kickoff.pdf)
 
 ### _Session 2: Enabling Continuous Delivery with 'cf push'_
   - [Lab 1 - Building and Pushing Your First Application](session_02/lab_01/lab_01.adoc)
@@ -76,6 +79,6 @@ _Extra credit - labs can be done on your own!_
   - [Lab 9 - Circuit Breaker Dashboard](session_05/lab_09/lab_09.adoc)
 
 ## Speakers & Instructors
-- Brian Gregory, ESI, bgregory@express-scripts.com
 - Dan Kennedy, Pivotal, dkennedy@pivotal.io
 - Steve Womack, Pivotal, swomack@pivotal.io
+- Brian Jimerson, Pivotal, bjimerson@pivotal.io
