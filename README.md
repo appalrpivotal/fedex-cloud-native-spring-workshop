@@ -63,7 +63,7 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ### _Lunch:_
 
-### _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_ [(Slides)](session_03/Session_03-Cloud_Native_Architectures_and_Frameworks.pptx)
+### _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_ [(Slides)](Session_03/Session_03-Cloud_Native_Architectures_and_Frameworks.pptx)
 
 ### _Session 4, Spring Boot Overview_ [(Slides)](session_04/Session_04-Spring-Boot-Overview.pptx)
 
