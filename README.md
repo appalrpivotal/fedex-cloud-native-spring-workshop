@@ -51,9 +51,9 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ## Course Materials
 
-### _Kickoff & Intro_ [(Slides)](session_01/Fedex-WorkshopIntro.pptx)
+### _Breakfast and Registration_
 
-### _Session 1: Brian Gregory - ESI Cloud_ [(Slides)](session_01/Session_01-kickoff.pdf)
+### _Session 1: Workshop Kickoff - Pivotal-Syntel Partnership_ [(Slides)](session_01/Session_01-kickoff.pptx)
 
 ### _Session 2: Enabling Continuous Delivery with 'cf push'_
   - [Lab 1 - Building and Pushing Your First Application](session_02/lab_01/lab_01.adoc)
@@ -65,7 +65,9 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ### _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_ [(Slides)](session_03/Session_03-Cloud_Native_Architectures_and_Frameworks.pptx)
 
-### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up-2xpg.pdf)
+### _Session 3, Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_ [(Slides)](session_03/Session_03-Cloud_Native_Architectures_and_Frameworks.pptx)
+
+### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up.pptx)
 
 ### _BONUS - Session 4: Spring Boot and Actuator_ [(Slides)](session_03/Session_03-Spring_Boot_Actuator-2xpg.pdf)
 _Extra credit - labs can be done on your own!_
