@@ -317,4 +317,4 @@ Deleting service cf-scale-boot-logs in org Workshop / space user1 as swomack@piv
 OK
 ----
 
-link:/README.md#course-materials[Course Materials home] | link:/session_04/lab_05/lab_05.adoc[Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator]
+link:/README.md#course-materials[Course Materials home] | link:/session_05/lab_05/lab_05.adoc[Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator]
