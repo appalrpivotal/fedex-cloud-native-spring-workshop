@@ -74,7 +74,7 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 _Extra credit - labs can be done on your own!_
   - [Lab 5 - Introspection, Monitoring, and Metrics using Spring Boot Actuator](session_05/lab_05/lab_05.adoc)
 
-### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up.pptx)
+### _Wrap-up, Q&A_ [(Slides)](session_wrapup/Session_Wrap-up.pdf)
 
 ## Speakers & Instructors
 - Dan Kennedy, Pivotal, dkennedy@pivotal.io
