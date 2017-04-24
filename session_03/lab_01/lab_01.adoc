@@ -23,23 +23,25 @@ Follow the prompts, choosing default organization and space.
 == Crate Application
 
 . Go to http://start.spring.io/ in your browser
-. Change the package name to com.workshop .
+. Change the 'Group' field to 'com.workshop' .
 . Change the app name from demo to orders-service
-. Add the following dependencies:
+. Add the following dependencies individually:
 +
 ----
-JPA, Rest Repositories, MySQL, H2, Actuator, Lombok
+JPA Rest Repositories MySQL H2 Actuator Lombok
 ----
-. Click 'Generate Project', and save the zip file to this directory $COURSE_HOME/session_02/lab_01 ($COURSE_HOME is a pointer to where you cloned this repo )
+. Click 'Generate Project', and save the .zip file to this directory $COURSE_HOME/session_03/lab_01 ($COURSE_HOME is a pointer to where you cloned this repo )
 . Unzip the project
-. Delete the .zip file, copy ( or move ) the manifest.yml file from this directory into the newly extracted project directory
+. Delete the .zip file
+. Copy ( or move ) the manifest.yml file from this directory into the newly extracted project directory
+. For the following steps, use your favorite IDE or file editor
 . Add the following properties to the file src/main/resources/application.properties
 +
 ```
 security.basic.enabled=false
 management.security.enabled=false
 ```
-. Create a class, Order.java, in src/main/java/com/workshop , and paste in the following contents:
+. Create a class, OrderItem.java, in src/main/java/com/workshop , and paste in the following contents:
 +
 ```
 package com.workshop;
@@ -120,13 +122,13 @@ public class OrdersServiceApplication {
 . You should still be in the _Orders Service_ application directory:
 +
 ----
-$ cd $COURSE_HOME/session_02/lab_01/orders-service
+$ cd $COURSE_HOME/session_03/lab_01/orders-service
 ----
 
-. Using Maven, build and package the application:
+. Using Maven, build and package the application (note, windows users will use ./mvnw.bat :
 +
 ----
-$ mvnw install
+$ ./mvnw install
 ----
 
 . Push the application!
@@ -140,7 +142,7 @@ You should see output similar to the following listing. Take a look at the listi
 ====
 ----
 ➜  orders-service git:(master) ✗ cf push
-Using manifest file /Users/swomack/workspace-workshops/cloud-native-spring-workshop/session_02/lab_01/orders-service/manifest.yml
+Using manifest file /Users/swomack/workspace-workshops/cloud-native-spring-workshop/session_03/lab_01/orders-service/manifest.yml
 
 Creating app orders-service-brideless-subhero in org Express-Scripts / space Workshop as swomack@pivotal.io...
 OK
@@ -252,6 +254,8 @@ You can get the same output at any time by typing `cf app orders-service-bridele
 +
 In the example `cf push` above, the `urls:` section of the application health reports `orders-service-brideless-subhero.cfapps.io`, so http://orders-service-brideless-subhero.cfapps.io would have been used to examine this example deployed application. But use the url from your application deployment health report.
 
+We've just built out the most simple of RESTful APIs, with hypermedia support included. View the /orderItems endpoint of your application to see what has already been added in the database
+
 Because our application knows nothing about any backing databases, and h2 is on the classpath, h2's in memory database will be used when this application starts up. Look at the /health actuator endpoint of your application to see that there's no backing database reported. In the next lab, we'll bind a backing database
 ```
 "db": {
@@ -260,4 +264,6 @@ Because our application knows nothing about any backing databases, and h2 is on 
 "hello": 1
 }
 ```
+
+
 link:/README.md#course-materials[Course Materials home] | link:/session_03/lab_02/lab_02.adoc[Lab 2 - Binding to Cloud Foundry Services]
