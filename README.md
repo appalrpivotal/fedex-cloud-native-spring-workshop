@@ -10,10 +10,10 @@ Time | Session
 ---- | -------
 8:00 AM - 8:30 AM | _Breakfast & Introductions_
 8:30 AM - 9:00 AM | _Workshop Kickoff_
-8:30 AM - 9:00 AM | _Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
+9:00 - 9:30 AM | _Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_
 9:30 AM - 11:00 PM | _Enabling Continuous Delivery with 'cf push' (*LABS*)_
 11:00 PM- 11:15 PM | _Break_
-11:15 PM - 12:00 PM | _Cloud Native Platforms )_
+11:15 PM - 12:00 PM | _Cloud Native Platforms_
 12:00 PM - 1:00 PM | _Lunch_
 1:00 PM - 2:00 PM | _Spring Overview_
 2:00 PM - 3:00 PM | _Developer Workshop (Continued)_
