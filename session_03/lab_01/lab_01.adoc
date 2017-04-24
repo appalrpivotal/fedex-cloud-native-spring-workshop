@@ -40,6 +40,7 @@ JPA Rest Repositories MySQL H2 Actuator Lombok
 ```
 security.basic.enabled=false
 management.security.enabled=false
+spring.jpa.hibernate.ddl-auto=create
 ```
 . Create a class, OrderItem.java, in src/main/java/com/workshop , and paste in the following contents:
 +
