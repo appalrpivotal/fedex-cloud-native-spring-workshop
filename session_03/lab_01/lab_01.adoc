@@ -254,7 +254,7 @@ You can get the same output at any time by typing `cf app orders-service-bridele
 +
 In the example `cf push` above, the `urls:` section of the application health reports `orders-service-brideless-subhero.cfapps.io`, so http://orders-service-brideless-subhero.cfapps.io would have been used to examine this example deployed application. But use the url from your application deployment health report.
 
-We've just built out the most simple of RESTful APIs, with hypermedia support included. View the /orderItems endpoint of your application to see what has already been added in the database
+. We've just built out the most simple of RESTful APIs, with hypermedia support included. View the /orderItems endpoint of your application to see what has already been added in the database
 
 Because our application knows nothing about any backing databases, and h2 is on the classpath, h2's in memory database will be used when this application starts up. Look at the /health actuator endpoint of your application to see that there's no backing database reported. In the next lab, we'll bind a backing database
 ```
