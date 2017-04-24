@@ -19,7 +19,6 @@ Time | Session
 2:00 PM - 3:00 PM | _Developer Workshop (Continued)_
 3:00 PM - 3:30 PM | _Wrap-up, Q&A_
 
-
 _*See [Course Materials](#course-materials) section below for slides and labs_
 
 This is a _loose_ schedule for the day. We will adjust as necessary based on our pace through the material. We'll take breaks as the group agrees
