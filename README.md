@@ -58,7 +58,7 @@ In order to perform the labs, you must be connected or logged into a live PCF en
 
 ### _Workshop Kickoff - Pivotal-Syntel Partnership_ [(Slides)](session_01/Session_01-kickoff.pptx)
 
-### _Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_ [(Slides)](session_02/Session_02-Cloud_Native_Architectures_and_Frameworks.pptx)
+### _Cloud Native Architectures and Frameworks( Microservices, 12Factor Apps )_ [(Slides)](fession_02/Session_02-Cloud_Native_Architectures_and_Frameworks.pptx)
 
 ### _Enabling Continuous Delivery with 'cf push'_
   - [Lab 1 - Building and Pushing Your First Application](session_03/lab_01/lab_01.adoc)
